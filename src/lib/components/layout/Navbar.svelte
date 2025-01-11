@@ -3,12 +3,13 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index';
 	import { buttonVariants } from '$lib/components/ui/button/index';
 	import { Menu, CalendarCheck2, Book } from 'lucide-svelte';
+	import logo from '$lib/assets/Aunt-liz-logo.png';
 </script>
 
 <nav class="flex h-[4rem] w-full items-center px-5 lg:shadow">
 	<div class="mx-auto flex w-full max-w-[1100px] items-center justify-center">
 		<div class="w-1/4 sm:w-1/3">
-			<img src="src/lib/assets/Aunt-liz-logo.png" class="w-10 lg:w-14" alt="logo" />
+			<img src={logo} class="w-10 lg:w-14" alt="logo" />
 		</div>
 		<div class="justify center flex w-1/2 items-center justify-center sm:w-1/3">
 			<h1 class="text-xl font-black tracking-wide text-primary lg:text-2xl">
