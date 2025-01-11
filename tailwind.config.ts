@@ -17,10 +17,10 @@ const config: Config = {
 		extend: {
 			colors: {
 				border: 'hsl(var(--border) / <alpha-value>)',
-				title: 'hsl(var(--title) / <alpha-value>)',
-				subTitle: 'hsl(var(--subTitle) / <alpha-value>)',
 				input: 'hsl(var(--input) / <alpha-value>)',
 				ring: 'hsl(var(--ring) / <alpha-value>)',
+				downy: 'hsl(var(--downy) / <alpha-value>)',
+				panache: 'hsl(var(--panache) / <alpha-value>)',
 				background: 'hsl(var(--background) / <alpha-value>)',
 				foreground: 'hsl(var(--foreground) / <alpha-value>)',
 				primary: {

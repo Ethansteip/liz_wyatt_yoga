@@ -5,46 +5,40 @@
 	import { Brush, Menu } from 'lucide-svelte';
 </script>
 
-<nav class="flex h-16 w-full items-center px-5 lg:shadow">
-	<div class="w-1/3 sm:w-1/3">
-		<Button variant="ghost" size="icon" href="/">
-			<Brush />
-		</Button>
-	</div>
-	<div class="justify center flex w-1/2 items-center justify-center font-bold sm:w-1/3">
-		<h1 class="text-title tracking-wide">
-			<a href="/">Liz Wyatt Yoga</a>
-		</h1>
-	</div>
-	<div class="flex w-1/3 items-center justify-end sm:w-1/3">
-		<ul class="hidden lg:flex">
-			<li>
-				<Button variant="link" href="/about">About</Button>
-			</li>
-			<li>
-				<Button variant="link" href="/schedule">Schedule</Button>
-			</li>
-			<li>
-				<Button variant="link" href="/">Location</Button>
-			</li>
-			<li>
-				<Button variant="link" href="/">Lessons</Button>
-			</li>
-		</ul>
-		<div class="flex lg:hidden">
-			<DropdownMenu.Root>
-				<DropdownMenu.Trigger class={buttonVariants({ variant: 'ghost', size: 'icon' })}
-					><Menu /></DropdownMenu.Trigger
-				>
-				<DropdownMenu.Content class="mr-2 mt-1">
-					<DropdownMenu.Group>
-						<DropdownMenu.Item><a href="/schedule" class="w-full">Schedule</a></DropdownMenu.Item>
-						<DropdownMenu.Item><a href="/about" class="w-full">About</a></DropdownMenu.Item>
-						<DropdownMenu.Item><a href="/" class="w-full">Pricing</a></DropdownMenu.Item>
-						<DropdownMenu.Item><a href="/" class="w-full">Location</a></DropdownMenu.Item>
-					</DropdownMenu.Group>
-				</DropdownMenu.Content>
-			</DropdownMenu.Root>
+<nav class="flex h-[4rem] w-full items-center px-5 lg:shadow">
+	<div class="mx-auto flex w-full max-w-[1100px] items-center justify-center">
+		<div class="w-1/4 sm:w-1/3">
+			<Button variant="ghost" size="icon" href="/">
+				<Brush />
+			</Button>
+		</div>
+		<div class="justify center flex w-1/2 items-center justify-center sm:w-1/3">
+			<h1 class="text-xl font-black tracking-wide text-primary lg:text-2xl">
+				<a href="/">Liz Wyatt Yoga</a>
+			</h1>
+		</div>
+		<div class="flex w-1/4 items-center justify-end sm:w-1/3">
+			<ul class="hidden lg:flex">
+				<li>
+					<Button variant="link" href="/about">About</Button>
+				</li>
+				<li>
+					<Button variant="link" href="/schedule">Schedule</Button>
+				</li>
+			</ul>
+			<div class="flex lg:hidden">
+				<DropdownMenu.Root>
+					<DropdownMenu.Trigger class={buttonVariants({ variant: 'ghost', size: 'icon' })}
+						><Menu /></DropdownMenu.Trigger
+					>
+					<DropdownMenu.Content class="mr-2 mt-1">
+						<DropdownMenu.Group>
+							<DropdownMenu.Item><a href="/schedule" class="w-full">Schedule</a></DropdownMenu.Item>
+							<DropdownMenu.Item><a href="/about" class="w-full">About</a></DropdownMenu.Item>
+						</DropdownMenu.Group>
+					</DropdownMenu.Content>
+				</DropdownMenu.Root>
+			</div>
 		</div>
 	</div>
 </nav>
