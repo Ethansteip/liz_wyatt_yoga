@@ -25,6 +25,7 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
 		"globals": "^15.0.0",
+		"lucide-svelte": "^0.471.0",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
 		"prettier-plugin-tailwindcss": "^0.6.5",
@@ -39,7 +40,6 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
-		"@fontsource-variable/manrope": "^5.1.1",
-		"lucide-svelte": "^0.471.0"
+		"@fontsource-variable/manrope": "^5.1.1"
 	}
 }

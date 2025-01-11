@@ -1,5 +1,7 @@
 <script>
 	import Button from '../ui/button/button.svelte';
+	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index';
+	import { buttonVariants } from '$lib/components/ui/button/index';
 	import { Brush, Menu } from 'lucide-svelte';
 </script>
 
@@ -17,20 +19,32 @@
 	<div class="flex w-1/3 items-center justify-end sm:w-1/3">
 		<ul class="hidden lg:flex">
 			<li>
-				<Button variant="link">About</Button>
+				<Button variant="link" href="/about">About</Button>
 			</li>
 			<li>
-				<Button variant="link">Pricing</Button>
+				<Button variant="link" href="/">Pricing</Button>
 			</li>
 			<li>
-				<Button variant="link">Location</Button>
+				<Button variant="link" href="/">Location</Button>
 			</li>
 			<li>
-				<Button variant="link">Lessons</Button>
+				<Button variant="link" href="/">Lessons</Button>
 			</li>
 		</ul>
-		<Button variant="ghost" size="icon" class="flex lg:hidden">
-			<Menu />
-		</Button>
+		<div class="flex lg:hidden">
+			<DropdownMenu.Root>
+				<DropdownMenu.Trigger class={buttonVariants({ variant: 'ghost', size: 'icon' })}
+					><Menu /></DropdownMenu.Trigger
+				>
+				<DropdownMenu.Content class="mr-2 mt-1">
+					<DropdownMenu.Group>
+						<DropdownMenu.Item><a href="/">Lessons</a></DropdownMenu.Item>
+						<DropdownMenu.Item><a href="/about">About</a></DropdownMenu.Item>
+						<DropdownMenu.Item><a href="/">Pricing</a></DropdownMenu.Item>
+						<DropdownMenu.Item><a href="/">Location</a></DropdownMenu.Item>
+					</DropdownMenu.Group>
+				</DropdownMenu.Content>
+			</DropdownMenu.Root>
+		</div>
 	</div>
 </nav>
