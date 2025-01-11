@@ -12,7 +12,7 @@
 		</Button>
 	</div>
 	<div class="justify center flex w-1/2 items-center justify-center font-bold sm:w-1/3">
-		<h1 class="tracking-wide">
+		<h1 class="text-title tracking-wide">
 			<a href="/">Liz Wyatt Yoga</a>
 		</h1>
 	</div>
@@ -22,7 +22,7 @@
 				<Button variant="link" href="/about">About</Button>
 			</li>
 			<li>
-				<Button variant="link" href="/">Pricing</Button>
+				<Button variant="link" href="/schedule">Schedule</Button>
 			</li>
 			<li>
 				<Button variant="link" href="/">Location</Button>
@@ -38,7 +38,7 @@
 				>
 				<DropdownMenu.Content class="mr-2 mt-1">
 					<DropdownMenu.Group>
-						<DropdownMenu.Item><a href="/lessons" class="w-full">Lessons</a></DropdownMenu.Item>
+						<DropdownMenu.Item><a href="/schedule" class="w-full">Schedule</a></DropdownMenu.Item>
 						<DropdownMenu.Item><a href="/about" class="w-full">About</a></DropdownMenu.Item>
 						<DropdownMenu.Item><a href="/" class="w-full">Pricing</a></DropdownMenu.Item>
 						<DropdownMenu.Item><a href="/" class="w-full">Location</a></DropdownMenu.Item>

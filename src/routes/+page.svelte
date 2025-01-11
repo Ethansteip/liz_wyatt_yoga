@@ -16,12 +16,20 @@
 			>
 				<p class="text-gray-600">Image goes here</p>
 			</div>
-			<h2
-				in:fly={{ delay: 350, duration: 400, y: 20 }}
-				class="text-3xl font-bold tracking-wide text-primary"
-			>
-				Practice at home with the worlds top yoga teachers
-			</h2>
+			<div class="flex flex-col gap-y-1">
+				<h2
+					in:fly={{ delay: 350, duration: 400, y: 20 }}
+					class="text-title text-3xl font-bold tracking-wide"
+				>
+					Catch Your Breath
+				</h2>
+				<h2
+					in:fly={{ delay: 500, duration: 400, y: 20 }}
+					class="font-md text-2xl tracking-wider text-gray-500"
+				>
+					Inclusive yoga classes for all ages and abilities in Kitchener-Waterloo
+				</h2>
+			</div>
 		{/if}
 	</div>
 </section>
