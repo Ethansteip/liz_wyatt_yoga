@@ -38,10 +38,10 @@
 				>
 				<DropdownMenu.Content class="mr-2 mt-1">
 					<DropdownMenu.Group>
-						<DropdownMenu.Item><a href="/">Lessons</a></DropdownMenu.Item>
-						<DropdownMenu.Item><a href="/about">About</a></DropdownMenu.Item>
-						<DropdownMenu.Item><a href="/">Pricing</a></DropdownMenu.Item>
-						<DropdownMenu.Item><a href="/">Location</a></DropdownMenu.Item>
+						<DropdownMenu.Item><a href="/lessons" class="w-full">Lessons</a></DropdownMenu.Item>
+						<DropdownMenu.Item><a href="/about" class="w-full">About</a></DropdownMenu.Item>
+						<DropdownMenu.Item><a href="/" class="w-full">Pricing</a></DropdownMenu.Item>
+						<DropdownMenu.Item><a href="/" class="w-full">Location</a></DropdownMenu.Item>
 					</DropdownMenu.Group>
 				</DropdownMenu.Content>
 			</DropdownMenu.Root>
