@@ -113,8 +113,8 @@
 					</Carousel.Item>
 				{/each}
 			</Carousel.Content>
-			<Carousel.Previous />
-			<Carousel.Next />
+			<Carousel.Previous class="hidden md:flex" />
+			<Carousel.Next class="hidden md:flex" />
 		</Carousel.Root>
 		<Button href="/schedule" class="mt-3 flex md:hidden">
 			View All
