@@ -2,8 +2,11 @@
 	import Button from '../ui/button/button.svelte';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index';
 	import { buttonVariants } from '$lib/components/ui/button/index';
-	import { Menu, CalendarCheck2, Book } from 'lucide-svelte';
+	import { Menu, CalendarCheck2, Book, House } from 'lucide-svelte';
+	import { page } from '$app/state';
 	import logo from '$lib/assets/Aunt-liz-logo.png';
+
+	console.log('Path: ', page.url.pathname);
 </script>
 
 <nav class="flex h-[4rem] w-full items-center px-5 lg:shadow">
@@ -24,27 +27,45 @@
 				<li>
 					<Button variant="link" href="/schedule">Schedule</Button>
 				</li>
+				<li>
+					<Button variant="link" href="/">Home</Button>
+				</li>
 			</ul>
 			<div class="flex lg:hidden">
 				<DropdownMenu.Root>
 					<DropdownMenu.Trigger class={buttonVariants({ variant: 'ghost', size: 'icon' })}
 						><Menu /></DropdownMenu.Trigger
 					>
-					<DropdownMenu.Content class="mr-2 mt-1">
+					<DropdownMenu.Content class="mr-4 mt-1">
 						<DropdownMenu.Group>
 							<DropdownMenu.Item
 								><a
 									href="/schedule"
-									class="flex w-full flex-row items-center justify-between text-lg"
+									class="flex w-full flex-row items-center justify-between gap-x-8 text-lg"
+									class:text-primary={page.url.pathname === '/schedule'}
 								>
 									<p>Schedule</p>
 									<CalendarCheck2 />
 								</a></DropdownMenu.Item
 							>
 							<DropdownMenu.Item
-								><a href="/about" class="flex w-full flex-row items-center justify-between text-lg">
+								><a
+									href="/about"
+									class="flex w-full flex-row items-center justify-between gap-x-8 text-lg"
+									class:text-primary={page.url.pathname === '/about'}
+								>
 									<p>About</p>
 									<Book /></a
+								></DropdownMenu.Item
+							>
+							<DropdownMenu.Item
+								><a
+									href="/"
+									class="flex w-full flex-row items-center justify-between gap-x-8 text-lg"
+									class:text-primary={page.url.pathname === '/'}
+								>
+									<p>Home</p>
+									<House /></a
 								></DropdownMenu.Item
 							>
 						</DropdownMenu.Group>
