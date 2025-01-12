@@ -5,8 +5,6 @@
 	import { Menu, CalendarCheck2, Book, House } from 'lucide-svelte';
 	import { page } from '$app/state';
 	import logo from '$lib/assets/Aunt-liz-logo.png';
-
-	console.log('Path: ', page.url.pathname);
 </script>
 
 <nav class="flex h-[4rem] w-full items-center px-5 lg:shadow">

@@ -2,6 +2,8 @@
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import Button from '$lib/components/ui/button/button.svelte';
+	import * as Card from '$lib/components/ui/card/index';
+	import * as Carousel from '$lib/components/ui/carousel/index';
 	import { ArrowRight, TreeDeciduous, Brain, ScanHeart } from 'lucide-svelte';
 	import BenefitCard from '$lib/components/layout/BenefitCard.svelte';
 
@@ -9,7 +11,9 @@
 	onMount(() => (ready = true));
 </script>
 
-<section class="mx-auto flex h-screen w-full max-w-[1100px] flex-col items-center p-5 lg:p-0">
+<section
+	class="mx-auto flex h-screen w-full max-w-[1100px] flex-col items-center p-5 lg:mt-14 lg:p-0"
+>
 	<!-- Hero Banner -->
 	<div
 		class="flex h-[35rem] w-full flex-col gap-4 md:flex-row-reverse md:items-center md:justify-center"
@@ -50,9 +54,9 @@
 	</div>
 
 	<!-- Benefits of yoga section -->
-	<div class="mt-10 flex w-screen max-w-[1100px] flex-col bg-downy p-3 md:p-10 lg:rounded-xl">
-		<h3 class="mb-7 mt-3 text-center text-3xl font-bold tracking-wide text-panache">
-			Why Choose yoga?
+	<div class="mt-10 flex w-screen max-w-[1100px] flex-col bg-downy p-5 md:p-10 lg:rounded-xl">
+		<h3 class="mb-7 mt-3 text-center text-3xl font-bold tracking-wide text-panache lg:mt-0">
+			Why choose yoga?
 		</h3>
 		<div class="flex w-full flex-col gap-8 lg:flex-row">
 			<BenefitCard>
@@ -74,5 +78,47 @@
 					a supportive community here. My classes meet you where you are in your yoga journey.{/snippet}
 			</BenefitCard>
 		</div>
+	</div>
+
+	<!-- Upcoming Lessons -->
+	<div
+		class="flex w-full max-w-[1100px] flex-col p-5 md:flex-row-reverse md:justify-between md:p-10 lg:rounded-xl"
+	>
+		<div class="mb-5 flex flex-col gap-2 md:w-1/2">
+			<h3
+				class="mt-3 text-center text-3xl font-bold tracking-wide text-secondary md:text-left lg:mt-0"
+			>
+				Upcoming lessons
+			</h3>
+			<p class="mb-3 text-center text-slate-500 md:text-left">
+				Join us weekly at one of our three locations: Waterloo Memorial Recreation Complex, RIM
+				Park, and St. Agatha Community Centre.
+			</p>
+			<Button href="/schedule" class="hidden md:flex">
+				View All
+				<ArrowRight />
+			</Button>
+		</div>
+		<Carousel.Root class="w-full max-w-xs md:w-1/2">
+			<Carousel.Content>
+				{#each Array(5) as _, i (i)}
+					<Carousel.Item>
+						<div class="p-1">
+							<Card.Root>
+								<Card.Content class="flex aspect-square items-center justify-center p-6">
+									<span class="text-4xl font-semibold">{i + 1}</span>
+								</Card.Content>
+							</Card.Root>
+						</div>
+					</Carousel.Item>
+				{/each}
+			</Carousel.Content>
+			<Carousel.Previous />
+			<Carousel.Next />
+		</Carousel.Root>
+		<Button href="/schedule" class="mt-3 flex md:hidden">
+			View All
+			<ArrowRight />
+		</Button>
 	</div>
 </section>
