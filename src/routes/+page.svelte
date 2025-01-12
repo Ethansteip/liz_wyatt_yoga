@@ -6,13 +6,14 @@
 	import * as Carousel from '$lib/components/ui/carousel/index';
 	import { ArrowRight, TreeDeciduous, Brain, ScanHeart } from 'lucide-svelte';
 	import BenefitCard from '$lib/components/layout/BenefitCard.svelte';
+	import { schedule } from '$lib/data';
 
 	let ready = false;
 	onMount(() => (ready = true));
 </script>
 
 <section
-	class="mx-auto flex h-screen w-full max-w-[1100px] flex-col items-center p-5 lg:mt-14 lg:p-0"
+	class="mx-auto flex h-auto w-full max-w-[1100px] flex-col items-center p-5 lg:mt-14 lg:p-0"
 >
 	<!-- Hero Banner -->
 	<div
@@ -101,12 +102,27 @@
 		</div>
 		<Carousel.Root class="w-full max-w-xs md:w-1/2">
 			<Carousel.Content>
-				{#each Array(5) as _, i (i)}
+				{#each schedule as lesson}
 					<Carousel.Item>
 						<div class="p-1">
 							<Card.Root>
-								<Card.Content class="flex aspect-square items-center justify-center p-6">
-									<span class="text-4xl font-semibold">{i + 1}</span>
+								<Card.Content
+									class="flex aspect-square flex-col items-center justify-center rounded-lg bg-white p-6 text-center shadow-lg transition-shadow hover:shadow-xl"
+								>
+									<div class="flex flex-col items-center space-y-2">
+										<span class="text-lg font-semibold text-gray-800">{lesson.location}</span>
+										<span class="text-sm text-gray-600">{lesson.address}</span>
+										<span class="text-sm text-gray-700">{lesson.weekday}</span>
+										<span class="text-sm text-gray-700">{lesson.time}</span>
+										<span
+											class="rounded-full bg-primary px-3 py-1 text-sm font-medium text-panache"
+										>
+											{lesson.class}
+										</span>
+										<Button variant="link" class="text-primary" href="/schedule/{lesson.id}"
+											>View Details</Button
+										>
+									</div>
 								</Card.Content>
 							</Card.Root>
 						</div>
