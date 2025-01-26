@@ -19,7 +19,7 @@
 	const session = schedule.find((s) => s.id === lessonId);
 
 	const LESSON_DURATION = '60 minutes';
-	const LESSON_PRICE = '$15 per class';
+	const LESSON_PRICE = '$18 per class';
 </script>
 
 {#if session}
