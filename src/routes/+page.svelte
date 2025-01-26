@@ -4,7 +4,7 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 	import * as Card from '$lib/components/ui/card/index';
 	import * as Carousel from '$lib/components/ui/carousel/index';
-	import { ArrowRight, TreeDeciduous, Brain, ScanHeart } from 'lucide-svelte';
+	import { ArrowRight, TreeDeciduous, Brain, ScanHeart, Check } from 'lucide-svelte';
 	import BenefitCard from '$lib/components/layout/BenefitCard.svelte';
 	import { schedule } from '$lib/data';
 
@@ -56,7 +56,7 @@
 
 	<!-- Benefits of yoga section -->
 	<div class="mt-10 flex w-screen max-w-[1100px] flex-col bg-downy p-5 md:p-10 lg:rounded-xl">
-		<h3 class="mb-7 mt-3 text-center text-3xl font-bold tracking-wide text-panache lg:mt-0">
+		<h3 class="mb-10 text-center text-3xl font-bold tracking-wide text-panache lg:mt-0">
 			Why choose yoga?
 		</h3>
 		<div class="flex w-full flex-col gap-8 lg:flex-row">
@@ -82,59 +82,107 @@
 	</div>
 
 	<!-- Upcoming Lessons -->
-	<div
-		class="flex w-full max-w-[1100px] flex-col p-5 md:flex-row-reverse md:justify-between md:p-10 lg:rounded-xl"
-	>
-		<div class="mb-5 flex flex-col gap-2 md:w-1/2">
-			<h3
-				class="mt-3 text-center text-3xl font-bold tracking-wide text-secondary md:text-left lg:mt-0"
-			>
-				Upcoming lessons
-			</h3>
-			<p class="mb-3 text-center text-slate-500 md:text-left">
-				Join us weekly at one of our three locations: Waterloo Memorial Recreation Complex, RIM
-				Park, and St. Agatha Community Centre.
-			</p>
-			<Button href="/schedule" class="hidden md:flex">
-				View All
-				<ArrowRight />
-			</Button>
-		</div>
-		<Carousel.Root class="w-full max-w-xs md:w-1/2">
-			<Carousel.Content>
-				{#each schedule as lesson}
-					<Carousel.Item>
-						<div class="p-1">
-							<Card.Root>
-								<Card.Content
-									class="flex aspect-square flex-col items-center justify-center rounded-lg bg-white p-6 text-center shadow-lg transition-shadow hover:shadow-xl"
-								>
-									<div class="flex flex-col items-center space-y-2">
-										<span class="text-lg font-semibold text-gray-800">{lesson.location}</span>
-										<span class="text-sm text-gray-600">{lesson.address}</span>
-										<span class="text-sm text-gray-700">{lesson.weekday}</span>
-										<span class="text-sm text-gray-700">{lesson.time}</span>
-										<span
-											class="rounded-full bg-primary px-3 py-1 text-sm font-medium text-panache"
-										>
-											{lesson.class}
-										</span>
-										<Button variant="link" class="text-primary" href="/schedule/{lesson.id}"
-											>View Details</Button
-										>
-									</div>
-								</Card.Content>
-							</Card.Root>
+	<div class="my-10 w-full max-w-[1100px] rounded-xl md:p-8 lg:bg-slate-50">
+		<div class="flex flex-col md:flex-row md:gap-14">
+			<!-- Left side content -->
+			<div class="mb-8 flex flex-col gap-4 md:mb-0 md:w-1/2">
+				<div class="flex flex-1 flex-col justify-between">
+					<div>
+						<h3 class="text-center text-3xl font-bold tracking-wide text-secondary md:text-left">
+							Upcoming lessons
+						</h3>
+						<p class="mt-3 text-center text-slate-500 md:text-left">
+							Join us weekly at one of our three locations: Waterloo Memorial Recreation Complex,
+							RIM Park, and St. Agatha Community Centre.
+						</p>
+
+						<!-- Added class info cards -->
+						<div class="mt-4 grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
+							<div
+								class="rounded-lg bg-slate-50 p-2 text-center shadow-md md:text-left lg:bg-white lg:p-4"
+							>
+								<span class="text-sm font-medium text-primary">Class Duration</span>
+								<p class="mt-1 text-2xl font-semibold">60 min</p>
+							</div>
+							<div
+								class="rounded-lg bg-slate-50 p-2 text-center shadow-md md:text-left lg:bg-white lg:p-2"
+							>
+								<span class="text-sm font-medium text-primary">Class Price</span>
+								<p class="mt-1 text-2xl font-semibold">$18.00</p>
+							</div>
 						</div>
-					</Carousel.Item>
-				{/each}
-			</Carousel.Content>
-			<Carousel.Previous class="hidden md:flex" />
-			<Carousel.Next class="hidden md:flex" />
-		</Carousel.Root>
-		<Button href="/schedule" class="mt-3 flex md:hidden">
-			View All
-			<ArrowRight />
-		</Button>
+					</div>
+
+					<div class="mx-auto mt-5 w-full space-y-3 text-center sm:w-[60%] md:w-full md:text-left">
+						<div class="flex items-center gap-2 text-center text-slate-600">
+							<Check class="text-primary" />
+							<span>Suitable for all experience levels</span>
+						</div>
+						<div class="flex items-center gap-2 text-slate-600">
+							<Check class="text-primary" />
+							<span>Equipment provided</span>
+						</div>
+						<div class="flex items-center gap-2 text-slate-600">
+							<Check class="text-primary" />
+							<span>Accepting new students</span>
+						</div>
+					</div>
+
+					<Button href="/schedule" class="mt-4 hidden w-full md:flex md:w-auto">
+						View All Classes
+						<ArrowRight />
+					</Button>
+				</div>
+			</div>
+
+			<!-- Right side carousel -->
+			<div class="h-full md:w-1/2">
+				<Carousel.Root class="mx-auto h-full w-full max-w-md">
+					<Carousel.Content>
+						{#each schedule as lesson}
+							<Carousel.Item>
+								<div class="p-1">
+									<Card.Root>
+										<Card.Content
+											class="flex aspect-[4/4] flex-col items-center justify-center rounded-lg bg-white p-6 text-center shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl"
+										>
+											<div class="flex flex-col items-center space-y-3">
+												<span class="text-xl font-semibold text-gray-800">{lesson.location}</span>
+												<span class="text-sm text-gray-600">{lesson.address}</span>
+												<div class="flex flex-col items-center gap-2 lg:flex-row">
+													<span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-gray-700">
+														{lesson.weekday}
+													</span>
+													<span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-gray-700">
+														{lesson.time}
+													</span>
+												</div>
+												<span
+													class="rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-panache"
+												>
+													{lesson.class}
+												</span>
+												<Button variant="link" class="text-primary" href="/schedule/{lesson.id}">
+													View Details
+												</Button>
+											</div>
+										</Card.Content>
+									</Card.Root>
+								</div>
+							</Carousel.Item>
+						{/each}
+					</Carousel.Content>
+					<Carousel.Previous class="-left-3 p-6 md:-left-10" />
+					<Carousel.Next class="-right-3 p-6 md:-right-10" />
+				</Carousel.Root>
+				<Button
+					href="/schedule"
+					class="mx-auto mt-4 flex w-[50%] items-center justify-center md:hidden md:w-auto"
+				>
+					View All Classes
+					<ArrowRight />
+				</Button>
+			</div>
+		</div>
 	</div>
 </section>
