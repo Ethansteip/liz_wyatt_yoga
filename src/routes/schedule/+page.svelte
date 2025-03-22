@@ -59,6 +59,7 @@
 							<img
 								src={mapImages[session.mapLocation as keyof typeof mapImages]}
 								alt={`Map preview for ${session.location}`}
+								loading="lazy"
 								class="h-full w-full object-cover transition-transform hover:scale-105"
 							/>
 						</a>

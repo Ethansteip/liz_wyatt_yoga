@@ -4,7 +4,7 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 	import * as Card from '$lib/components/ui/card/index';
 	import * as Carousel from '$lib/components/ui/carousel/index';
-	import { ArrowRight, TreeDeciduous, Brain, ScanHeart, Check } from 'lucide-svelte';
+	import { ArrowRight, TreeDeciduous, Brain, ScanHeart, Check, Quote } from 'lucide-svelte';
 	import BenefitCard from '$lib/components/layout/BenefitCard.svelte';
 	import { schedule } from '$lib/data';
 
@@ -62,7 +62,7 @@
 		<div class="flex w-full flex-col gap-8 lg:flex-row">
 			<BenefitCard>
 				{#snippet icon()}<ScanHeart class="h-8 w-8 text-white" />{/snippet}
-				{#snippet title()}Benefits{/snippet}
+				{#snippet title()}Physical Benefits{/snippet}
 				{#snippet description()}Yoga strengthens both body and mind, improving flexibility and
 					balance while building core strength.{/snippet}
 			</BenefitCard>
@@ -184,5 +184,67 @@
 				</Button>
 			</div>
 		</div>
+	</div>
+
+	<!-- Reviews Section -->
+	<div class="my-10 w-full max-w-[1100px] rounded-xl bg-slate-50 p-8">
+		<h3 class="text-center text-3xl font-bold tracking-wide text-secondary">
+			Hear What People Are Saying
+		</h3>
+		<p class="mt-2 text-center text-slate-500">Reviewss from our wonderful yoga community</p>
+
+		<div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+			<Card.Root>
+				<Card.Content class="flex flex-col gap-4 p-6">
+					<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 p-2">
+						<Quote class="h-4 w-4 text-primary" />
+					</div>
+					<p class="italic text-slate-600">
+						"I look forward to Liz's class every week. It helps me to relax, breathe better, stretch
+						my muscles and focus inward."
+					</p>
+					<div class="flex w-full justify-end">
+						<p class="font-medium text-secondary">- Sarah</p>
+					</div>
+				</Card.Content>
+			</Card.Root>
+
+			<Card.Root>
+				<Card.Content class="flex flex-col gap-4 p-6">
+					<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 p-2">
+						<Quote class="h-4 w-4 text-primary" />
+					</div>
+					<p class="italic text-slate-600">
+						"She is very good at letting you slowly get into the poses and just hold them with easy
+						breathing to feel the strength in your body!"
+					</p>
+					<div class="flex w-full justify-end">
+						<p class="font-medium text-secondary">- Michael</p>
+					</div>
+				</Card.Content>
+			</Card.Root>
+
+			<Card.Root>
+				<Card.Content class="flex flex-col gap-4 p-6">
+					<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 p-2">
+						<Quote class="h-4 w-4 text-primary" />
+					</div>
+					<p class="italic text-slate-600">
+						"As a senior, I am so grateful for Liz's knowledgeable classes. The breathing,
+						stretching and different poses are important to me as they keep me flexible and strong."
+					</p>
+					<div class="flex w-full justify-end">
+						<p class="font-medium text-secondary">- Emma</p>
+					</div>
+				</Card.Content>
+			</Card.Root>
+		</div>
+
+		<!-- <div class="mt-8 flex justify-center">
+			<Button variant="outline" href="/reviews">
+				Read More Reviews
+				<ArrowRight />
+			</Button>
+		</div> -->
 	</div>
 </section>
