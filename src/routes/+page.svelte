@@ -191,7 +191,7 @@
 		<h3 class="text-center text-3xl font-bold tracking-wide text-secondary">
 			Hear What People Are Saying
 		</h3>
-		<p class="mt-2 text-center text-slate-500">Reviews from our wonderful yoga community</p>
+		<p class="mt-2 text-center text-slate-500">Here's what people have to say:</p>
 
 		<div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 			<Card.Root class="h-full">

@@ -25,16 +25,22 @@
 
 			<div class="space-y-4 text-slate-600">
 				<p>
-					With over 15 years of experience teaching yoga, I've dedicated my life to helping others
-					find peace, strength, and flexibility through mindful movement.
+					Liz Wyatt, BA, BEd, E-RYT 550, has over 25 years of yoga practice, teaching and teacher
+					mentoring.
 				</p>
 				<p>
-					My teaching philosophy centers on creating an inclusive and welcoming environment where
-					students of all ages and abilities can explore yoga at their own pace.
+					With a professional background in education and fitness leadership, Liz brings her skills
+					in teaching and her vast knowledge of yoga techniques and philosophy into every class.
+					She's known for her respect for the yoga tradition, easy going manner, and ever-present
+					sense of humour.
 				</p>
 				<p>
-					I specialize in gentle "chair" and "mat" yoga, making the practice accessible to everyone,
-					regardless of their fitness level or mobility constraints.
+					“Slow and Subtle” is Liz's technique. Slow and mindful yoga is not the same thing as
+					strong, physical exercise; it is a different practice grounded in ancient wisdom and
+					modern neuroscience. Although you will notice gains in strength and flexibility, you will
+					also become aware of the differences that you feel as you gradually bring your nervous
+					system into balance. Whether you participate on a mat on the floor or sitting in a chair,
+					think of “working in” instead of “working out”.
 				</p>
 			</div>
 
