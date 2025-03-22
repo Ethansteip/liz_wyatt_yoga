@@ -194,14 +194,15 @@
 		<p class="mt-2 text-center text-slate-500">Reviews from our wonderful yoga community</p>
 
 		<div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-			<Card.Root>
-				<Card.Content class="flex flex-col gap-4 p-6">
+			<Card.Root class="h-full">
+				<Card.Content class="flex h-full flex-col gap-4 p-6">
 					<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 p-2">
 						<Quote class="h-4 w-4 text-primary" />
 					</div>
-					<p class="italic text-slate-600">
+					<p class="flex-grow italic text-slate-600">
 						"I look forward to Liz's class every week. It helps me to relax, breathe better, stretch
-						my muscles and focus inward."
+						my muscles and focus inward. It leaves me feeling centred, relaxed and energized. This
+						is my kind of yoga"
 					</p>
 					<div class="flex w-full justify-end">
 						<p class="font-medium text-secondary">- Sarah</p>
@@ -209,14 +210,16 @@
 				</Card.Content>
 			</Card.Root>
 
-			<Card.Root>
-				<Card.Content class="flex flex-col gap-4 p-6">
+			<Card.Root class="h-full">
+				<Card.Content class="flex h-full flex-col gap-4 p-6">
 					<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 p-2">
 						<Quote class="h-4 w-4 text-primary" />
 					</div>
-					<p class="italic text-slate-600">
-						"She is very good at letting you slowly get into the poses and just hold them with easy
-						breathing to feel the strength in your body!"
+					<p class="flex-grow italic text-slate-600">
+						"I enjoy Liz's yoga classes very much as a way to relax and to just have time to myself
+						and really listen to my body move. She is very good at letting you slowly get into the
+						poses and just hold them with easy breathing to feel the strength in your body! Yes it
+						is gentle, but it is very effective!"
 					</p>
 					<div class="flex w-full justify-end">
 						<p class="font-medium text-secondary">- Michael</p>
@@ -224,14 +227,16 @@
 				</Card.Content>
 			</Card.Root>
 
-			<Card.Root>
-				<Card.Content class="flex flex-col gap-4 p-6">
+			<Card.Root class="h-full">
+				<Card.Content class="flex h-full flex-col gap-4 p-6">
 					<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 p-2">
 						<Quote class="h-4 w-4 text-primary" />
 					</div>
-					<p class="italic text-slate-600">
+					<p class="flex-grow italic text-slate-600">
 						"As a senior, I am so grateful for Liz's knowledgeable classes. The breathing,
-						stretching and different poses are important to me as they keep me flexible and strong."
+						stretching and different poses are important to me as they keep me flexible and strong.
+						I also feel more confident with my body. Thank you Liz. You make everyone feel welcome
+						and comfortable."
 					</p>
 					<div class="flex w-full justify-end">
 						<p class="font-medium text-secondary">- Emma</p>
