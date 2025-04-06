@@ -19,7 +19,6 @@
 	const session = schedule.find((s) => s.id === lessonId);
 
 	const LESSON_DURATION = '60 minutes';
-	const LESSON_PRICE = '$18 per class';
 </script>
 
 {#if session}
@@ -42,8 +41,14 @@
 					</div>
 					<div class="flex items-center gap-2 text-muted-foreground">
 						<DollarSign class="h-5 w-5" />
-						<span>{LESSON_PRICE}</span>
+						<span>{session.price}</span>
 					</div>
+					{#if session.dropInPrice}
+						<div class="flex items-center gap-2 text-muted-foreground">
+							<DollarSign class="h-5 w-5" />
+							<span>{session.dropInPrice}</span>
+						</div>
+					{/if}
 				</Card.Description>
 			</Card.Header>
 

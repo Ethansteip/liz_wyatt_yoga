@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
 	import { Instagram, Mail, Phone } from 'lucide-svelte';
+	import Liz from '$lib/assets/liz.jpg';
 	import Button from '$lib/components/ui/button/button.svelte';
 </script>
 
@@ -10,7 +11,7 @@
 		<!-- Image -->
 		<div class="w-full lg:w-1/2">
 			<div class="aspect-square w-full overflow-hidden rounded-xl bg-slate-200 shadow-lg">
-				<p class="flex h-full items-center justify-center text-slate-600">Profile Image</p>
+				<img src={Liz} alt="Liz Wyatt" />
 			</div>
 		</div>
 

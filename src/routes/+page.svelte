@@ -169,15 +169,26 @@
 											<div
 												class="absolute bottom-3 left-3 right-3 h-1/3 rounded-lg bg-black/50 p-4 text-white"
 											>
-												<div class="flex h-full flex-col items-center justify-between">
+												<div class="flex h-full flex-col items-center justify-center gap-2">
 													<span class="text-lg font-semibold">{lesson.location}</span>
 													<div class="flex flex-wrap items-center justify-center gap-2">
-														<span class="rounded-full bg-white/20 px-3 py-1 text-xs">
+														{#if lesson.duration}
+															<span class="rounded-full bg-white/60 px-3 py-1 text-xs">
+																{lesson.duration}
+															</span>
+														{/if}
+														<span class="rounded-full bg-white/60 px-3 py-1 text-xs">
 															{lesson.time}
 														</span>
 														<span class="rounded-full bg-primary px-4 py-1 text-xs font-medium">
 															{lesson.class}
 														</span>
+														<a
+															href="/schedule/{lesson.id}"
+															class="rounded-full bg-secondary px-4 py-1 text-xs font-medium"
+														>
+															View Details
+														</a>
 													</div>
 												</div>
 											</div>

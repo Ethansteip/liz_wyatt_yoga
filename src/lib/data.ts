@@ -17,63 +17,79 @@ export const schedule = [
 		id: 1,
 		location: 'St. Agatha Community Centre',
 		address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
+		duration: '',
 		weekday: getNextDayOfWeek(1),
 		class: 'Chair Yoga',
 		image: ChairYoga1,
 		time: 'To be announced',
-		mapLocation: 'st-agatha'
+		mapLocation: 'st-agatha',
+		price: 'To be announced'
 	},
 	{
 		id: 2,
 		location: 'St. Agatha Community Centre',
 		address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
+		duration: '',
 		weekday: getNextDayOfWeek(1),
 		class: 'Mat Yoga',
 		image: MatYoga1,
 		time: 'To be announced',
-		mapLocation: 'st-agatha'
+		mapLocation: 'st-agatha',
+		price: 'To be announced'
 	},
 	{
 		id: 3,
-		location: 'WMRC',
+		location: 'Waterloo Memorial Recreation Complex',
 		address:
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
+		duration: 'April 8th - June 24th',
 		weekday: getNextDayOfWeek(2),
 		class: 'Chair Yoga',
 		image: ChairYoga2,
-		time: '10:00 - 11:00 am',
-		mapLocation: 'wmrc'
+		time: 'Tuesdays - 10:00 - 11:00 am',
+		mapLocation: 'wmrc',
+		price: '$132 for 12 weeks - 55+ is $99 / 12 Weeks',
+		dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
 	},
 	{
 		id: 4,
-		location: 'WMRC',
+		location: 'Waterloo Memorial Recreation Complex',
 		address:
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
+		duration: 'April 8th - June 24th',
 		weekday: getNextDayOfWeek(2),
 		class: 'Mat Yoga',
 		image: MatYoga3,
-		time: '11:15 - 12:15 pm',
-		mapLocation: 'wmrc'
+		time: 'Tuesdays - 11:15 - 12:15 pm',
+		mapLocation: 'wmrc',
+		price: '$132 for 12 weeks - 55+ is $99 / 12 Weeks',
+		dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
 	},
 	{
 		id: 5,
-		location: 'RIM',
+		location: 'RIM Park',
 		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
+		duration: 'May 7th - June 25th',
 		weekday: getNextDayOfWeek(3),
 		class: 'Mat Yoga',
 		image: MatYoga2,
-		time: '10:00 - 11:00 am',
-		mapLocation: 'rim'
+		time: 'Wednesdays - 10:00 - 11:00 am',
+		mapLocation: 'rim',
+		price: '$77 for 8 weeks - 55+ is $57.75 / 8 Weeks',
+		dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
 	},
 	{
 		id: 6,
-		location: 'RIM',
+		location: 'RIM Park',
 		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
+		duration: 'May 7th - June 25th',
 		weekday: getNextDayOfWeek(3),
 		class: 'Mat Yoga',
 		image: MatYoga4,
-		time: '6:45 - 7:45 pm',
-		mapLocation: 'rim'
+		time: 'Wednesdays - 6:45 - 7:45 pm',
+		mapLocation: 'rim',
+		price: '$77 for 8 weeks - 55+ is $57.75 / 8 Weeks',
+		dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
 	}
 ];
 

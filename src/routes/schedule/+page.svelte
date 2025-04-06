@@ -47,7 +47,7 @@
 						<p class="text-sm text-muted-foreground">{session.address}</p>
 					</div>
 
-					<div class="mt-auto aspect-video overflow-hidden rounded-lg bg-muted">
+					<div class="mt-auto aspect-square overflow-hidden rounded-lg bg-muted">
 						<a
 							href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
 								session.address
@@ -57,10 +57,10 @@
 							class="block h-full w-full"
 						>
 							<img
-								src={mapImages[session.mapLocation as keyof typeof mapImages]}
+								src={session.image}
 								alt={`Map preview for ${session.location}`}
 								loading="lazy"
-								class="h-full w-full object-cover transition-transform hover:scale-105"
+								class="h-full w-auto transition-transform hover:scale-105"
 							/>
 						</a>
 					</div>
