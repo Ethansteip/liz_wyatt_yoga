@@ -159,7 +159,7 @@
 											<!-- Background Image -->
 											{#if lesson.image}
 												<img
-													src={`/src/lib/assets/${lesson.image}`}
+													src={lesson.image}
 													alt={`${lesson.class} class`}
 													class="h-full w-full object-cover"
 												/>

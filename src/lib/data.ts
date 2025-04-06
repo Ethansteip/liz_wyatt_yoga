@@ -1,3 +1,10 @@
+import ChairYoga1 from '$lib/assets/chair-yoga-2.png';
+import ChairYoga2 from '$lib/assets/chair-yoga-3.png';
+import MatYoga1 from '$lib/assets/mat-yoga-1.png';
+import MatYoga2 from '$lib/assets/mat-yoga-2.png';
+import MatYoga3 from '$lib/assets/mat-yoga-3.png';
+import MatYoga4 from '$lib/assets/mat-yoga-4.png';
+
 export const yogaDescriptions = {
 	'Chair Yoga':
 		'A gentle form of yoga that can be done while seated. Perfect for seniors, those with limited mobility, or anyone looking for a more accessible yoga practice. Benefits include improved flexibility, better posture, reduced stress, and enhanced breathing awareness - all while remaining seated in a chair.',
@@ -12,7 +19,7 @@ export const schedule = [
 		address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
 		weekday: getNextDayOfWeek(1),
 		class: 'Chair Yoga',
-		image: 'chair-yoga-2.png',
+		image: ChairYoga1,
 		time: 'To be announced',
 		mapLocation: 'st-agatha'
 	},
@@ -22,7 +29,7 @@ export const schedule = [
 		address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
 		weekday: getNextDayOfWeek(1),
 		class: 'Mat Yoga',
-		image: 'mat-yoga-1.png',
+		image: MatYoga1,
 		time: 'To be announced',
 		mapLocation: 'st-agatha'
 	},
@@ -33,7 +40,7 @@ export const schedule = [
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
 		weekday: getNextDayOfWeek(2),
 		class: 'Chair Yoga',
-		image: 'chair-yoga-3.png',
+		image: ChairYoga2,
 		time: '10:00 - 11:00 am',
 		mapLocation: 'wmrc'
 	},
@@ -44,7 +51,7 @@ export const schedule = [
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
 		weekday: getNextDayOfWeek(2),
 		class: 'Mat Yoga',
-		image: 'mat-yoga-3.png',
+		image: MatYoga3,
 		time: '11:15 - 12:15 pm',
 		mapLocation: 'wmrc'
 	},
@@ -54,7 +61,7 @@ export const schedule = [
 		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
 		weekday: getNextDayOfWeek(3),
 		class: 'Mat Yoga',
-		image: 'mat-yoga-2.png',
+		image: MatYoga2,
 		time: '10:00 - 11:00 am',
 		mapLocation: 'rim'
 	},
@@ -64,7 +71,7 @@ export const schedule = [
 		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
 		weekday: getNextDayOfWeek(3),
 		class: 'Mat Yoga',
-		image: 'mat-yoga-4.png',
+		image: MatYoga4,
 		time: '6:45 - 7:45 pm',
 		mapLocation: 'rim'
 	}
