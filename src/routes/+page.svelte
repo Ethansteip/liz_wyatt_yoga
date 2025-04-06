@@ -167,10 +167,10 @@
 
 											<!-- Semi-transparent overlay with details -->
 											<div
-												class="absolute bottom-3 left-3 right-3 h-1/3 rounded-lg bg-black/50 p-4 text-white"
+												class="absolute bottom-3 left-3 right-3 h-auto rounded-lg bg-black/50 p-4 text-white"
 											>
 												<div class="flex h-full flex-col items-center justify-center gap-2">
-													<span class="text-lg font-semibold">{lesson.location}</span>
+													<span class="text-center text-lg font-semibold">{lesson.location}</span>
 													<div class="flex flex-wrap items-center justify-center gap-2">
 														{#if lesson.duration}
 															<span class="rounded-full bg-white/60 px-3 py-1 text-xs">
