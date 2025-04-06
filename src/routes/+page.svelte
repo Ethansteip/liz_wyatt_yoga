@@ -5,6 +5,7 @@
 	import * as Card from '$lib/components/ui/card/index';
 	import * as Carousel from '$lib/components/ui/carousel/index';
 	import { ArrowRight, TreeDeciduous, Brain, ScanHeart, Check, Quote } from 'lucide-svelte';
+	import HeroImage from '$lib/assets/hero-image.png';
 	import BenefitCard from '$lib/components/layout/BenefitCard.svelte';
 	import { schedule } from '$lib/data';
 
@@ -17,15 +18,19 @@
 >
 	<!-- Hero Banner -->
 	<div
-		class="flex h-[35rem] w-full flex-col gap-4 md:flex-row-reverse md:items-center md:justify-center"
+		class="flex h-[545px] w-full flex-col gap-4 sm:justify-center md:h-[700px] md:flex-row-reverse md:items-center lg:h-[600px]"
 	>
 		{#if ready}
 			<!-- Image -->
 			<div
 				in:fly={{ delay: 200, duration: 400, y: 20 }}
-				class="flex h-[18rem] w-full items-center justify-center rounded bg-slate-400"
+				class="flex w-full items-center justify-center"
 			>
-				<p class="text-gray-600">Image goes here</p>
+				<img
+					src={HeroImage}
+					alt="two middle-aged women doing yoga"
+					class="h-full w-full rounded-xl object-cover"
+				/>
 			</div>
 			<!-- Text -->
 			<div class="mt-5 flex flex-col gap-y-1">
@@ -62,9 +67,8 @@
 		<div class="flex w-full flex-col gap-8 lg:flex-row">
 			<BenefitCard>
 				{#snippet icon()}<ScanHeart class="h-8 w-8 text-white" />{/snippet}
-				{#snippet title()}Physical Benefits{/snippet}
-				{#snippet description()}Yoga strengthens both body and mind, improving flexibility and
-					balance while building core strength.{/snippet}
+				{#snippet title()}Benefits{/snippet}
+				{#snippet description()}Yoga is a great refresh for body, mind, and spirit.{/snippet}
 			</BenefitCard>
 			<BenefitCard>
 				{#snippet icon()}<Brain class="h-8 w-8 text-white" />{/snippet}
@@ -105,24 +109,30 @@
 								<p class="mt-1 text-2xl font-semibold">60 min</p>
 							</div>
 							<div
-								class="rounded-lg bg-slate-50 p-2 text-center shadow-md md:text-left lg:bg-white lg:p-2"
+								class="rounded-lg bg-slate-50 p-2 text-center shadow-md md:text-left lg:bg-white lg:p-4"
 							>
-								<span class="text-sm font-medium text-primary">Class Price</span>
-								<p class="mt-1 text-2xl font-semibold">$18.00</p>
+								<span class="text-sm font-medium text-primary">Price</span>
+								<p class="mt-1 text-2xl font-semibold">Varies by class</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="mx-auto mt-5 w-full space-y-3 text-center sm:w-[60%] md:w-full md:text-left">
-						<div class="flex items-center gap-2 text-center text-slate-600">
+						<div
+							class="flex w-full items-center justify-center gap-2 text-center text-slate-600 md:justify-start"
+						>
 							<Check class="text-primary" />
 							<span>Suitable for all experience levels</span>
 						</div>
-						<div class="flex items-center gap-2 text-slate-600">
+						<div
+							class="flex w-full items-center justify-center gap-2 text-center text-slate-600 md:justify-start"
+						>
 							<Check class="text-primary" />
 							<span>Equipment provided</span>
 						</div>
-						<div class="flex items-center gap-2 text-slate-600">
+						<div
+							class="flex w-full items-center justify-center gap-2 text-center text-slate-600 md:justify-start"
+						>
 							<Check class="text-primary" />
 							<span>Accepting new students</span>
 						</div>
@@ -144,27 +154,32 @@
 								<div class="p-1">
 									<Card.Root>
 										<Card.Content
-											class="flex aspect-[4/4] flex-col items-center justify-center rounded-lg bg-white p-6 text-center shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl"
+											class="relative aspect-square overflow-hidden rounded-lg p-0 shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl"
 										>
-											<div class="flex flex-col items-center space-y-3">
-												<span class="text-xl font-semibold text-gray-800">{lesson.location}</span>
-												<span class="text-sm text-gray-600">{lesson.address}</span>
-												<div class="flex flex-col items-center gap-2 lg:flex-row">
-													<span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-gray-700">
-														{lesson.weekday}
-													</span>
-													<span class="rounded-full bg-slate-100 px-3 py-1 text-sm text-gray-700">
-														{lesson.time}
-													</span>
+											<!-- Background Image -->
+											{#if lesson.image}
+												<img
+													src={`/src/lib/assets/${lesson.image}`}
+													alt={`${lesson.class} class`}
+													class="h-full w-full object-cover"
+												/>
+											{/if}
+
+											<!-- Semi-transparent overlay with details -->
+											<div
+												class="absolute bottom-3 left-3 right-3 h-1/3 rounded-lg bg-black/50 p-4 text-white"
+											>
+												<div class="flex h-full flex-col items-center justify-between">
+													<span class="text-lg font-semibold">{lesson.location}</span>
+													<div class="flex flex-wrap items-center justify-center gap-2">
+														<span class="rounded-full bg-white/20 px-3 py-1 text-xs">
+															{lesson.time}
+														</span>
+														<span class="rounded-full bg-primary px-4 py-1 text-xs font-medium">
+															{lesson.class}
+														</span>
+													</div>
 												</div>
-												<span
-													class="rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-panache"
-												>
-													{lesson.class}
-												</span>
-												<Button variant="link" class="text-primary" href="/schedule/{lesson.id}">
-													View Details
-												</Button>
 											</div>
 										</Card.Content>
 									</Card.Root>
@@ -191,7 +206,6 @@
 		<h3 class="text-center text-3xl font-bold tracking-wide text-secondary">
 			Hear What People Are Saying
 		</h3>
-		<p class="mt-2 text-center text-slate-500">Here's what people have to say:</p>
 
 		<div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 			<Card.Root class="h-full">
@@ -200,12 +214,12 @@
 						<Quote class="h-4 w-4 text-primary" />
 					</div>
 					<p class="flex-grow italic text-slate-600">
-						"I look forward to Liz's class every week. It helps me to relax, breathe better, stretch
-						my muscles and focus inward. It leaves me feeling centred, relaxed and energized. This
-						is my kind of yoga"
+						"For the first time in 68 years I have tried yoga. It has helped me with the aftermath
+						of Non-Hodgkins, my fibromyalgia and my anxiety issues. A huge thank you to Liz for
+						helping me to cope with life."
 					</p>
 					<div class="flex w-full justify-end">
-						<p class="font-medium text-secondary">- Sarah</p>
+						<p class="font-medium text-secondary">- Betty</p>
 					</div>
 				</Card.Content>
 			</Card.Root>
@@ -216,13 +230,13 @@
 						<Quote class="h-4 w-4 text-primary" />
 					</div>
 					<p class="flex-grow italic text-slate-600">
-						"I enjoy Liz's yoga classes very much as a way to relax and to just have time to myself
-						and really listen to my body move. She is very good at letting you slowly get into the
-						poses and just hold them with easy breathing to feel the strength in your body! Yes it
-						is gentle, but it is very effective!"
+						"Thank you so much for teaching me yoga. Your calmness and serenity has gone a long way
+						in helping me to be in a great state. My mind is very peaceful after your class. The
+						breathing and the technique in which you teach touches my heart . You are a great
+						teacher."
 					</p>
 					<div class="flex w-full justify-end">
-						<p class="font-medium text-secondary">- Michael</p>
+						<p class="font-medium text-secondary">- Palak</p>
 					</div>
 				</Card.Content>
 			</Card.Root>
@@ -233,23 +247,16 @@
 						<Quote class="h-4 w-4 text-primary" />
 					</div>
 					<p class="flex-grow italic text-slate-600">
-						"As a senior, I am so grateful for Liz's knowledgeable classes. The breathing,
-						stretching and different poses are important to me as they keep me flexible and strong.
-						I also feel more confident with my body. Thank you Liz. You make everyone feel welcome
-						and comfortable."
+						"I am a yogi and have been for 20+ years. As I mature in life, my yoga practices evolve
+						and I adapt. Adapting has brought me to yet another yoga practice called Slow and
+						Mindful led by Liz Wyatt. Liz is a skilled and always mindful yoga teacher. She
+						continues to master her skills through ongoing teachings."
 					</p>
 					<div class="flex w-full justify-end">
-						<p class="font-medium text-secondary">- Emma</p>
+						<p class="font-medium text-secondary">- Patti</p>
 					</div>
 				</Card.Content>
 			</Card.Root>
 		</div>
-
-		<!-- <div class="mt-8 flex justify-center">
-			<Button variant="outline" href="/reviews">
-				Read More Reviews
-				<ArrowRight />
-			</Button>
-		</div> -->
 	</div>
 </section>

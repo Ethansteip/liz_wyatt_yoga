@@ -12,7 +12,8 @@ export const schedule = [
 		address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
 		weekday: getNextDayOfWeek(1),
 		class: 'Chair Yoga',
-		time: '9:00 - 10:00 am',
+		image: 'chair-yoga-2.png',
+		time: 'To be announced',
 		mapLocation: 'st-agatha'
 	},
 	{
@@ -21,7 +22,8 @@ export const schedule = [
 		address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
 		weekday: getNextDayOfWeek(1),
 		class: 'Mat Yoga',
-		time: '10:15 - 11:15 am',
+		image: 'mat-yoga-1.png',
+		time: 'To be announced',
 		mapLocation: 'st-agatha'
 	},
 	{
@@ -31,6 +33,7 @@ export const schedule = [
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
 		weekday: getNextDayOfWeek(2),
 		class: 'Chair Yoga',
+		image: 'chair-yoga-3.png',
 		time: '10:00 - 11:00 am',
 		mapLocation: 'wmrc'
 	},
@@ -41,6 +44,7 @@ export const schedule = [
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
 		weekday: getNextDayOfWeek(2),
 		class: 'Mat Yoga',
+		image: 'mat-yoga-3.png',
 		time: '11:15 - 12:15 pm',
 		mapLocation: 'wmrc'
 	},
@@ -50,6 +54,7 @@ export const schedule = [
 		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
 		weekday: getNextDayOfWeek(3),
 		class: 'Mat Yoga',
+		image: 'mat-yoga-2.png',
 		time: '10:00 - 11:00 am',
 		mapLocation: 'rim'
 	},
@@ -59,6 +64,7 @@ export const schedule = [
 		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
 		weekday: getNextDayOfWeek(3),
 		class: 'Mat Yoga',
+		image: 'mat-yoga-4.png',
 		time: '6:45 - 7:45 pm',
 		mapLocation: 'rim'
 	}
