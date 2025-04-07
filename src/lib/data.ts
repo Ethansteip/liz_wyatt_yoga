@@ -4,6 +4,7 @@ import MatYoga1 from '$lib/assets/mat-yoga-1.jpg';
 import MatYoga2 from '$lib/assets/mat-yoga-2.jpg';
 import MatYoga3 from '$lib/assets/mat-yoga-3.jpg';
 import MatYoga4 from '$lib/assets/mat-yoga-4.jpg';
+//comment
 
 export const yogaDescriptions = {
 	'Chair Yoga':
