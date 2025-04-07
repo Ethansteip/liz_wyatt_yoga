@@ -3,7 +3,7 @@ import ChairYoga2 from '$lib/assets/chair-yoga-3.png';
 import MatYoga1 from '$lib/assets/mat-yoga-1.jpg';
 import MatYoga2 from '$lib/assets/mat-yoga-2.jpg';
 import MatYoga3 from '$lib/assets/mat-yoga-3.jpg';
-import MatYoga4 from '$lib/assets/mat-yoga-4.jpg';
+import MatYoga5 from '$lib/assets/mat-yoga-5.jpg';
 //comment
 
 export const yogaDescriptions = {
@@ -92,7 +92,7 @@ export const schedule = [
 		duration: 'May 7th - June 25th',
 		weekday: `Next class - ${getNextDayOfWeek(3)}`,
 		class: 'Mat Yoga',
-		image: MatYoga4,
+		image: MatYoga5,
 		time: 'Wednesdays - 6:45 - 7:45 pm',
 		mapLocation: 'rim',
 		price: '$77 for 8 weeks - 55+ is $57.75 / 8 Weeks',
