@@ -1,9 +1,9 @@
-import ChairYoga1 from '$lib/assets/chair-yoga-2.png';
+import ChairYoga1 from '$lib/assets/chair-yoga-2.jpg';
 import ChairYoga2 from '$lib/assets/chair-yoga-3.png';
-import MatYoga1 from '$lib/assets/mat-yoga-1.png';
-import MatYoga2 from '$lib/assets/mat-yoga-2.png';
-import MatYoga3 from '$lib/assets/mat-yoga-3.png';
-import MatYoga4 from '$lib/assets/mat-yoga-4.png';
+import MatYoga1 from '$lib/assets/mat-yoga-1.jpg';
+import MatYoga2 from '$lib/assets/mat-yoga-2.jpg';
+import MatYoga3 from '$lib/assets/mat-yoga-3.jpg';
+import MatYoga4 from '$lib/assets/mat-yoga-4.jpg';
 
 export const yogaDescriptions = {
 	'Chair Yoga':
@@ -15,35 +15,38 @@ export const yogaDescriptions = {
 export const schedule = [
 	{
 		id: 1,
+		classActive: false,
 		location: 'St. Agatha Community Centre',
 		address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
 		duration: '',
-		weekday: getNextDayOfWeek(1),
+		weekday: 'Dates to be announced',
 		class: 'Chair Yoga',
 		image: ChairYoga1,
-		time: 'To be announced',
+		time: 'Dates to be announced',
 		mapLocation: 'st-agatha',
 		price: 'To be announced'
 	},
 	{
 		id: 2,
+		classActive: false,
 		location: 'St. Agatha Community Centre',
 		address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
 		duration: '',
-		weekday: getNextDayOfWeek(1),
+		weekday: 'Dates to be announced',
 		class: 'Mat Yoga',
 		image: MatYoga1,
-		time: 'To be announced',
+		time: 'Dates to be announced',
 		mapLocation: 'st-agatha',
 		price: 'To be announced'
 	},
 	{
 		id: 3,
+		classActive: true,
 		location: 'Waterloo Memorial Recreation Complex',
 		address:
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
 		duration: 'April 8th - June 24th',
-		weekday: getNextDayOfWeek(2),
+		weekday: `Next class - ${getNextDayOfWeek(2)}`,
 		class: 'Chair Yoga',
 		image: ChairYoga2,
 		time: 'Tuesdays - 10:00 - 11:00 am',
@@ -53,11 +56,12 @@ export const schedule = [
 	},
 	{
 		id: 4,
+		classActive: true,
 		location: 'Waterloo Memorial Recreation Complex',
 		address:
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
 		duration: 'April 8th - June 24th',
-		weekday: getNextDayOfWeek(2),
+		weekday: `Next class - ${getNextDayOfWeek(2)}`,
 		class: 'Mat Yoga',
 		image: MatYoga3,
 		time: 'Tuesdays - 11:15 - 12:15 pm',
@@ -67,10 +71,11 @@ export const schedule = [
 	},
 	{
 		id: 5,
+		classActive: true,
 		location: 'RIM Park',
 		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
 		duration: 'May 7th - June 25th',
-		weekday: getNextDayOfWeek(3),
+		weekday: `Next class - ${getNextDayOfWeek(3)}`,
 		class: 'Mat Yoga',
 		image: MatYoga2,
 		time: 'Wednesdays - 10:00 - 11:00 am',
@@ -80,10 +85,11 @@ export const schedule = [
 	},
 	{
 		id: 6,
+		classActive: true,
 		location: 'RIM Park',
 		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
 		duration: 'May 7th - June 25th',
-		weekday: getNextDayOfWeek(3),
+		weekday: `Next class - ${getNextDayOfWeek(3)}`,
 		class: 'Mat Yoga',
 		image: MatYoga4,
 		time: 'Wednesdays - 6:45 - 7:45 pm',
@@ -100,6 +106,18 @@ function getNextDayOfWeek(targetDay: number) {
 
 	const today = new Date();
 	const currentDay = today.getDay(); // Get current day of the week
+
+	// If target day is today, return today's date
+	if (currentDay === targetDay) {
+		return today.toLocaleDateString(undefined, {
+			weekday: 'long',
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric'
+		});
+	}
+
+	// Otherwise, calculate next occurrence as before
 	const daysUntilTarget = (targetDay - currentDay + 7) % 7 || 7; // Calculate days until the target day
 	const nextDay = new Date(today);
 	nextDay.setDate(today.getDate() + daysUntilTarget); // Add days until the target day to today's date

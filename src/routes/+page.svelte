@@ -5,7 +5,7 @@
 	import * as Card from '$lib/components/ui/card/index';
 	import * as Carousel from '$lib/components/ui/carousel/index';
 	import { ArrowRight, TreeDeciduous, Brain, ScanHeart, Check, Quote } from 'lucide-svelte';
-	import HeroImage from '$lib/assets/hero-image.png';
+	import HeroImage from '$lib/assets/hero-image.jpg';
 	import BenefitCard from '$lib/components/layout/BenefitCard.svelte';
 	import { schedule } from '$lib/data';
 
@@ -177,7 +177,7 @@
 																{lesson.duration}
 															</span>
 														{/if}
-														<span class="rounded-full bg-white/60 px-3 py-1 text-xs">
+														<span class="rounded-full bg-white px-3 py-1 text-xs text-gray-600">
 															{lesson.time}
 														</span>
 														<span class="rounded-full bg-primary px-4 py-1 text-xs font-medium">

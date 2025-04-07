@@ -43,22 +43,14 @@
 				<Card.Content class="flex flex-1 flex-col space-y-4">
 					<div class="min-h-[100px]">
 						<p class="font-semibold">{session.time}</p>
-						<p class="text-sm text-muted-foreground">{session.location}</p>
 						<p class="text-sm text-muted-foreground">{session.address}</p>
 					</div>
 
 					<div class="mt-auto aspect-square overflow-hidden rounded-lg bg-muted">
-						<a
-							href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-								session.address
-							)}`}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="block h-full w-full"
-						>
+						<a href="/schedule/{session.id}" class="block h-full w-full">
 							<img
 								src={session.image}
-								alt={`Map preview for ${session.location}`}
+								alt="People doing {session.class}"
 								loading="lazy"
 								class="h-full w-auto transition-transform hover:scale-105"
 							/>
