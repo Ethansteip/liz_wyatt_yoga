@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://liz-wyatt-yoga.com/sitemap.xml 

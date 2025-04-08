@@ -5,6 +5,18 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 </script>
 
+<svelte:head>
+	<title>About Liz Wyatt - Certified Yoga Instructor in Kitchener-Waterloo</title>
+	<meta
+		name="description"
+		content="Meet Liz Wyatt, a certified yoga instructor with over 25 years of experience teaching slow and mindful yoga in Kitchener-Waterloo. E-RYT 550 certified."
+	/>
+	<meta
+		name="keywords"
+		content="Liz Wyatt, yoga instructor, Kitchener-Waterloo yoga, slow yoga, mindful yoga, certified yoga teacher, E-RYT 550, Canadian Yoga Alliance"
+	/>
+</svelte:head>
+
 <section class="mx-auto flex w-full max-w-[1100px] flex-col gap-10 p-5 py-10 lg:py-20">
 	<!-- Hero Section -->
 	<div class="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-20">

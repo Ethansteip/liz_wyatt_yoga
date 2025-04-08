@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { schedule } from '$lib/data';
 	import * as Card from '$lib/components/ui/card/index';
-	import Button from '$lib/components/ui/button/button.svelte';
 	import { ChevronRight } from 'lucide-svelte';
 
 	import stAgathaMap from '$lib/assets/st-agatha-map.png';
@@ -21,6 +20,18 @@
 			'Traditional yoga practice performed on a yoga mat. Includes standing and floor poses to improve flexibility, strength, and balance.'
 	};
 </script>
+
+<svelte:head>
+	<title>Yoga Class Schedule - Liz Wyatt Yoga in Kitchener-Waterloo</title>
+	<meta
+		name="description"
+		content="View our weekly yoga class schedule in Kitchener-Waterloo. Classes available at Waterloo Memorial Recreation Complex, RIM Park, and St. Agatha Community Centre."
+	/>
+	<meta
+		name="keywords"
+		content="yoga classes, Kitchener-Waterloo yoga schedule, chair yoga, mat yoga, St. Agatha yoga, RIM Park yoga, WMRC yoga, accessible yoga"
+	/>
+</svelte:head>
 
 <div class="container mx-auto px-4 py-8">
 	<h1 class="mb-8 text-4xl font-bold text-primary">Weekly Yoga Schedule</h1>

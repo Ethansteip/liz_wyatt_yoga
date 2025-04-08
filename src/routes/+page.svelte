@@ -13,6 +13,20 @@
 	onMount(() => (ready = true));
 </script>
 
+<svelte:head>
+	<title>Liz Wyatt Yoga - Slow and Mindful Yoga in Kitchener-Waterloo</title>
+	<meta
+		name="description"
+		content="Slow and Mindful yoga is all about connecting deeply with your breath and body in a relaxed
+			manner. This practice encourages exploration of stability and ease in both mind and body. We
+			are “working in” instead of “working out”!"
+	/>
+	<meta
+		name="keywords"
+		content="yoga Kitchener-Waterloo, mindful yoga, slow yoga, inclusive yoga, accessible yoga, beginner yoga, senior yoga, yoga for all abilities"
+	/>
+</svelte:head>
+
 <section
 	class="mx-auto flex h-auto w-full max-w-[1100px] flex-col items-center p-5 lg:mt-14 lg:p-0"
 >
