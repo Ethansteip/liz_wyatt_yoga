@@ -154,7 +154,7 @@
 								<div class="p-1">
 									<Card.Root>
 										<Card.Content
-											class="relative aspect-square overflow-hidden rounded-lg p-0 shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl"
+											class="relative aspect-square overflow-hidden rounded-lg p-0 shadow-lg"
 										>
 											<!-- Background Image -->
 											{#if lesson.image}

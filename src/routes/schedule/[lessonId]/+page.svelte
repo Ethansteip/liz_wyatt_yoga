@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { schedule, yogaDescriptions, createCalendarEvent } from '$lib/data';
+	import { schedule, yogaDescriptions } from '$lib/data';
 	import * as Card from '$lib/components/ui/card/index';
 	import { MapPin, Clock, Calendar, DollarSign } from 'lucide-svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
