@@ -82,7 +82,9 @@
 			<BenefitCard>
 				{#snippet icon()}<ScanHeart class="h-8 w-8 text-white" />{/snippet}
 				{#snippet title()}Benefits{/snippet}
-				{#snippet description()}Yoga is a great refresh for body, mind, and spirit.{/snippet}
+				{#snippet description()}Research suggests that slow and mindful yoga may help you to manage
+					stress, improve sleep, reduce pain, improve focus and attention, increase energy, relax
+					and the list goes on...{/snippet}
 			</BenefitCard>
 			<BenefitCard>
 				{#snippet icon()}<Brain class="h-8 w-8 text-white" />{/snippet}
@@ -272,13 +274,12 @@
 						<Quote class="h-4 w-4 text-primary" />
 					</div>
 					<p class="flex-grow italic text-slate-600">
-						"I am a yogi and have been for 20+ years. As I mature in life, my yoga practices evolve
-						and I adapt. Adapting has brought me to yet another yoga practice called Slow and
-						Mindful led by Liz Wyatt. Liz is a skilled and always mindful yoga teacher. She
-						continues to master her skills through ongoing teachings."
+						"I look forward to Liz's class every week. It helps me to relax, breathe better, stretch
+						my muscles and focus inward. It leaves me feeling centred, relaxed and energized. This
+						is my kind of yoga."
 					</p>
 					<div class="flex w-full justify-end">
-						<p class="font-medium text-secondary">- Patti</p>
+						<p class="font-medium text-secondary">- Anne</p>
 					</div>
 				</Card.Content>
 			</Card.Root>

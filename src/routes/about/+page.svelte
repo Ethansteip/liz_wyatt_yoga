@@ -17,52 +17,50 @@
 	/>
 </svelte:head>
 
-<section class="mx-auto flex w-full max-w-[1100px] flex-col gap-10 p-5 py-10 lg:py-20">
-	<!-- Hero Section -->
-	<div class="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-20">
+<section class="mx-auto flex w-full max-w-[1100px] flex-col gap-16 p-5 py-10 lg:py-20">
+	<!-- Top Section: Image and About -->
+	<div class="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-16">
 		<!-- Image -->
 		<div class="flex w-full items-center justify-center lg:w-1/2">
-			<div
-				class="aspect-square max-h-[600px] w-auto overflow-hidden rounded-xl bg-slate-200 shadow-lg"
-			>
-				<img src={Liz} alt="Liz Wyatt" />
-			</div>
+			<img
+				src={Liz}
+				alt="Liz Wyatt"
+				class="max-h-[600px] max-w-[400px] rounded-xl object-cover transition-transform duration-300 group-hover:scale-105 lg:h-full lg:max-h-[1200px] lg:w-full lg:max-w-[800px]"
+			/>
 		</div>
 
-		<!-- Text Content -->
-		<div class="flex w-full flex-col gap-6 lg:w-1/2">
+		<!-- About Liz Wyatt -->
+		<div class="flex w-full flex-col gap-4 lg:w-1/2">
 			<div class="space-y-4">
-				<h1 class="text-4xl font-bold tracking-tight text-primary lg:text-5xl">Liz Wyatt</h1>
-				<h2 class="text-xl font-medium text-secondary">Core Principles of Slow and Mindful Yoga</h2>
+				<h1 class="text-4xl font-bold tracking-tight text-primary lg:text-5xl">
+					About Your Instructor
+				</h1>
+				<h2 class="text-xl font-medium text-secondary">Liz Wyatt, BA, BEd, E-RYT 550</h2>
 			</div>
 
-			<div class="space-y-4 text-slate-600">
-				<p>
-					Slow and Mindful yoga is all about connecting deeply with your breath and body in a
-					relaxed manner. This practice encourages exploration of stability and ease in both mind
-					and body. We are “working in” instead of “working out”! By moving slowly through poses and
-					paying attention to breath and body sensations as they arise, you can gain greater health
-					and wellbeing by reducing stress, cultivating mental clarity, and improving physical
-					strength, flexibility and mobility.
+			<div class="space-y-6 text-slate-600">
+				<p class="leading-relaxed">
+					Welcome to my website. Here's a bit about me and the yoga that I teach.
 				</p>
-				<p>
-					<span class="font-bold text-primary">Breath Awareness:</span> Breathing is a core focus. You'll
-					use deep, slow breaths to guide your movements.
+				<p class="leading-relaxed">
+					I have over 25 years of yoga practice, teaching and teacher mentoring.
 				</p>
-				<p>
-					<span class="font-bold text-primary">Postures/Poses:</span> The poses are simple, practised
-					slowly, and often layered with fun variations. They are practiced dynamically and then held
-					for a short time. This encourages a relaxation response even while moving.
+				<p class="leading-relaxed">
+					With a professional background in education and fitness leadership, I bring my skills in
+					teaching and my knowledge of yoga techniques and philosophy into every class. I'm known
+					for my respect for the yoga tradition, my easy going manner, and ever-present sense of
+					humour.
 				</p>
-				<p>
-					<span class="font-bold text-primary">Mindfulness:</span> You are encouraged to pay attention
-					to your body's sensations and the flow of your breath in moment to moment awareness to avoid
-					rushing. Achieving “the perfect pose” is not a consideration.
+				<p class="leading-relaxed">
+					"Slow and subtle" is the way I teach. Slow and mindful yoga is not the same thing as
+					strong physical exercise; it is a different practice rooted in ancient wisdom and modern
+					neuroscience. Although you will notice gains in strength, flexibility and mobility, you
+					will also become aware of the differences that you feel as you gradually bring your
+					nervous system into balance.
 				</p>
-				<p>
-					<span class="font-bold text-primary">Pauses:</span> “The pause is as important as the pose”.
-					Throughout the class we'll pause our movement and relax for a few breaths in a restorative
-					pose to reflect on our experience.
+				<p class="leading-relaxed">
+					Whether you choose to participate sitting in a chair or on a mat on the floor, think of
+					"working in" instead of "working out".
 				</p>
 			</div>
 
@@ -89,13 +87,63 @@
 		</div>
 	</div>
 
+	<!-- Core Principles Section -->
+	<div
+		class="w-full overflow-hidden rounded-2xl bg-slate-50 p-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+	>
+		<div class="space-y-8">
+			<div class="space-y-2">
+				<h2 class="text-center text-2xl font-bold text-primary md:text-3xl">
+					Core Principles of Slow and Mindful Yoga
+				</h2>
+			</div>
+
+			<div class="grid gap-6 md:grid-cols-2">
+				<div class="space-y-4 rounded-xl bg-white p-6 shadow-sm">
+					<h3 class="text-lg font-semibold text-secondary md:text-xl">Breath Awareness</h3>
+					<p class="text-slate-600">
+						Breathwork is the foundation. You'll use deep, slow breaths to guide your movements and
+						learn a variety of techniques to gently raise energy or to calm down.
+					</p>
+				</div>
+
+				<div class="space-y-4 rounded-xl bg-white p-6 shadow-sm">
+					<h3 class="text-lg font-semibold text-secondary md:text-xl">Postures/Poses</h3>
+					<p class="text-slate-600">
+						The poses are simple, practised slowly, and often layered with effective, fun
+						variations. We move in and out of every pose and then stay for a short time. Make every
+						pose your own. Achieving "the perfect pose" is not a consideration.
+					</p>
+				</div>
+
+				<div class="space-y-4 rounded-xl bg-white p-6 shadow-sm">
+					<h3 class="text-lg font-semibold text-secondary md:text-xl">Mindfulness</h3>
+					<p class="text-slate-600">
+						You are encouraged to pay attention to your body's sensations and the flow of your
+						breath in moment to moment awareness to avoid rushing.
+					</p>
+				</div>
+
+				<div class="space-y-4 rounded-xl bg-white p-6 shadow-sm">
+					<h3 class="text-xl font-semibold text-secondary">Pausing</h3>
+					<p class="text-slate-600">
+						"The pause is as important as the pose." Throughout the class we'll pause our movement
+						and relax for a few breaths in a restorative pose to reflect on our experience.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Certifications Section -->
-	<Card.Root>
-		<Card.Content class="p-6">
-			<h2 class="mb-6 text-2xl font-bold text-primary">Certifications & Training</h2>
-			<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-				{#each ['Canadian Yoga Alliance Certified Yoga Instructor', 'E-RYT 550 - Canadian Yoga Alliance', 'E-CYT 500 GLOBAL ONLINE YOGA ALLIANCE', '40 HOUR SUBTLE YOGA TEACHER TRAINING', '100+ HOURS SUBTLE YOGA WORKSHOP TRAINING', '50 HOURS YOGA PHYSIOLOGY NYU', '100 HOUR MEDITATION TEACHER CERTIFICATION: Yogamu'] as certification}
-					<div class="flex w-full items-center gap-4 rounded-lg bg-slate-200 p-4">
+	<Card.Root class="overflow-hidden">
+		<Card.Content class="p-8">
+			<h2 class="mb-8 text-2xl font-bold text-primary lg:text-3xl">Certifications & Training</h2>
+			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+				{#each ['Canadian Yoga Alliance Certified Yoga Instructor', 'E-RYT 550 - Canadian Yoga Alliance', 'E-CYT 500 Global Online Yoga Alliance', '40 hour Subtle Yoga Teacher Training', '100+ hours Subtle Yoga Workshop Trainings', '50 hours Yoga Physiology NYU', '100 hour Meditation Teacher Certification:  Yogamu'] as certification}
+					<div
+						class="flex w-full items-center gap-4 rounded-lg bg-slate-100 p-4 transition-colors duration-200 hover:bg-slate-200"
+					>
 						<BookmarkCheck class="h-5 w-5 shrink-0 text-primary" />
 						<p class="font-medium text-slate-700">{certification}</p>
 					</div>
