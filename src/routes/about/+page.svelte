@@ -25,7 +25,7 @@
 			<img
 				src={Liz}
 				alt="Liz Wyatt"
-				class="max-h-[600px] max-w-[400px] rounded-xl object-cover transition-transform duration-300 group-hover:scale-105 lg:h-full lg:max-h-[1200px] lg:w-full lg:max-w-[800px]"
+				class="h-full w-full rounded-xl bg-red-200 transition-transform duration-300 group-hover:scale-105 sm:max-h-[700px] sm:max-w-[400px] md:object-cover md:p-0 lg:max-h-[1200px] lg:max-w-[800px]"
 			/>
 		</div>
 
@@ -138,7 +138,9 @@
 	<!-- Certifications Section -->
 	<Card.Root class="overflow-hidden">
 		<Card.Content class="p-8">
-			<h2 class="mb-8 text-2xl font-bold text-primary lg:text-3xl">Certifications & Training</h2>
+			<h2 class="mb-8 text-center text-2xl font-bold text-primary lg:text-3xl">
+				Certifications & Training
+			</h2>
 			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 				{#each ['Canadian Yoga Alliance Certified Yoga Instructor', 'E-RYT 550 - Canadian Yoga Alliance', 'E-CYT 500 Global Online Yoga Alliance', '40 hour Subtle Yoga Teacher Training', '100+ hours Subtle Yoga Workshop Trainings', '50 hours Yoga Physiology NYU', '100 hour Meditation Teacher Certification:  Yogamu'] as certification}
 					<div
