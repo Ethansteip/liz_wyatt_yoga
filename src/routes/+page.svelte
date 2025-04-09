@@ -19,7 +19,7 @@
 		name="description"
 		content="Slow and Mindful yoga is all about connecting deeply with your breath and body in a relaxed
 			manner. This practice encourages exploration of stability and ease in both mind and body. We
-			are “working in” instead of “working out”!"
+			are `working in` instead of `working out`!"
 	/>
 	<meta
 		name="keywords"
@@ -32,13 +32,13 @@
 >
 	<!-- Hero Banner -->
 	<div
-		class="flex h-[545px] w-full flex-col gap-4 sm:justify-center md:h-[700px] md:flex-row-reverse md:items-center lg:h-[600px]"
+		class="flex min-h-[500px] w-full flex-col gap-4 sm:min-h-[600px] md:min-h-[700px] md:flex-row-reverse md:items-center lg:min-h-[600px]"
 	>
 		{#if ready}
 			<!-- Image -->
 			<div
 				in:fly={{ delay: 200, duration: 400, y: 20 }}
-				class="flex w-full items-center justify-center"
+				class="flex h-[300px] w-full items-center justify-center sm:h-[400px] md:h-full"
 			>
 				<img
 					src={HeroImage}
@@ -47,16 +47,16 @@
 				/>
 			</div>
 			<!-- Text -->
-			<div class="mt-5 flex flex-col gap-y-1">
+			<div class="flex flex-col gap-y-4 md:gap-y-6 md:pr-8">
 				<h2
 					in:fly={{ delay: 350, duration: 400, y: 20 }}
-					class="text-center text-3xl font-bold tracking-wide text-primary md:text-left"
+					class="text-center text-3xl font-bold tracking-wide text-primary md:text-left md:text-4xl lg:text-5xl"
 				>
 					Slow and Mindful Yoga for Greater Health and Wellbeing
 				</h2>
 				<h2
 					in:fly={{ delay: 500, duration: 400, y: 20 }}
-					class="font-md text-center text-xl tracking-wider text-slate-500 md:text-left"
+					class="font-md text-center text-xl tracking-wider text-slate-500 md:text-left md:text-2xl"
 				>
 					Inclusive and accessible yoga classes for all ages and abilities in Kitchener-Waterloo
 				</h2>

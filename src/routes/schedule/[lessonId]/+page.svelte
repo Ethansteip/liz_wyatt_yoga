@@ -26,7 +26,7 @@
 		<Card.Root class="mx-auto max-w-3xl">
 			<Card.Header>
 				<Card.Title class="text-3xl font-bold text-primary">{session.class}</Card.Title>
-				<Card.Description class="flex flex-col gap-4 pt-4">
+				<div class="flex flex-col gap-4 pt-4">
 					<div class="flex items-center gap-2 text-muted-foreground">
 						<Calendar class="h-5 w-5" />
 						<span>{session.weekday}</span>
@@ -49,7 +49,7 @@
 							<span>{session.dropInPrice}</span>
 						</div>
 					{/if}
-				</Card.Description>
+				</div>
 			</Card.Header>
 
 			<Card.Content class="space-y-6">

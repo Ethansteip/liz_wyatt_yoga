@@ -40,15 +40,17 @@
 		{#each schedule as session}
 			<Card.Root class="flex flex-col overflow-hidden">
 				<Card.Header>
-					<Card.Title class="flex w-full items-center justify-between text-xl text-primary">
-						<h3>{session.class}</h3>
-						<a class="flex items-center text-sm font-medium" href={`/schedule/${session.id}`}>
-							Details
-							<ChevronRight class="w-4" />
-						</a>
+					<Card.Title>
+						<div class="flex w-full items-center justify-between text-xl text-primary">
+							<h3>{session.class}</h3>
+							<a class="flex items-center text-sm font-medium" href={`/schedule/${session.id}`}>
+								Details
+								<ChevronRight class="w-4" />
+							</a>
+						</div>
 					</Card.Title>
-					<Card.Description class="text-muted-foreground">
-						{session.weekday}
+					<Card.Description>
+						<div class="text-muted-foreground">{session.weekday}</div>
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="flex flex-1 flex-col space-y-4">
