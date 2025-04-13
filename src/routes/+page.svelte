@@ -5,9 +5,9 @@
 	import * as Card from '$lib/components/ui/card/index';
 	import * as Carousel from '$lib/components/ui/carousel/index';
 	import { ArrowRight, TreeDeciduous, Brain, ScanHeart, Check, Quote } from 'lucide-svelte';
-	import HeroImage from '$lib/assets/hero-image.jpg';
 	import BenefitCard from '$lib/components/layout/BenefitCard.svelte';
 	import { schedule } from '$lib/data';
+	import MatYoga3 from '$lib/assets/mat-yoga-3.jpg';
 
 	let ready = false;
 	onMount(() => (ready = true));
@@ -41,7 +41,7 @@
 				class="flex h-[300px] w-full items-center justify-center sm:h-[400px] md:h-full"
 			>
 				<img
-					src={HeroImage}
+					src={MatYoga3}
 					alt="two middle-aged women doing yoga"
 					class="h-full w-full rounded-xl object-cover"
 				/>
