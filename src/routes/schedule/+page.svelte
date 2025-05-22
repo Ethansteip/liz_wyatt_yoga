@@ -49,8 +49,8 @@
 							</a>
 						</div>
 					</Card.Title>
-					<Card.Description>
-						<div class="text-muted-foreground">{session.weekday}</div>
+					<Card.Description class="text-muted-foreground">
+						{session.weekday}
 					</Card.Description>
 				</Card.Header>
 				<Card.Content class="flex flex-1 flex-col space-y-4">

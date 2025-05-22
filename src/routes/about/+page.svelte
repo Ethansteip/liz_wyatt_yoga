@@ -25,7 +25,7 @@
 			<img
 				src={Liz}
 				alt="Liz Wyatt"
-				class="h-full w-full rounded-xl bg-red-200 transition-transform duration-300 group-hover:scale-105 sm:max-h-[700px] sm:max-w-[400px] md:object-cover md:p-0 lg:max-h-[1200px] lg:max-w-[800px]"
+				class="h-full w-full rounded-xl transition-transform duration-300 group-hover:scale-105 sm:max-h-[700px] sm:max-w-[400px] md:object-cover md:p-0 lg:max-h-[1200px] lg:max-w-[800px]"
 			/>
 		</div>
 
@@ -99,7 +99,7 @@
 			</div>
 
 			<div class="grid gap-6 md:grid-cols-2">
-				<div class="space-y-4 rounded-xl bg-white p-6 shadow-sm">
+				<div class="space-y-4 rounded-xl bg-white p-6 shadow-md">
 					<h3 class="text-lg font-semibold text-secondary md:text-xl">Breath Awareness</h3>
 					<p class="text-slate-600">
 						Breathwork is the foundation. You'll use deep, slow breaths to guide your movements and
@@ -107,7 +107,7 @@
 					</p>
 				</div>
 
-				<div class="space-y-4 rounded-xl bg-white p-6 shadow-sm">
+				<div class="space-y-4 rounded-xl bg-white p-6 shadow-md">
 					<h3 class="text-lg font-semibold text-secondary md:text-xl">Postures/Poses</h3>
 					<p class="text-slate-600">
 						The poses are simple, practised slowly, and often layered with effective, fun
@@ -116,7 +116,7 @@
 					</p>
 				</div>
 
-				<div class="space-y-4 rounded-xl bg-white p-6 shadow-sm">
+				<div class="space-y-4 rounded-xl bg-white p-6 shadow-md">
 					<h3 class="text-lg font-semibold text-secondary md:text-xl">Mindfulness</h3>
 					<p class="text-slate-600">
 						You are encouraged to pay attention to your body's sensations and the flow of your
@@ -124,7 +124,7 @@
 					</p>
 				</div>
 
-				<div class="space-y-4 rounded-xl bg-white p-6 shadow-sm">
+				<div class="space-y-4 rounded-xl bg-white p-6 shadow-md">
 					<h3 class="text-xl font-semibold text-secondary">Pausing</h3>
 					<p class="text-slate-600">
 						"The pause is as important as the pose." Throughout the class we'll pause our movement

@@ -76,7 +76,7 @@
 	<!-- Benefits of yoga section -->
 	<div class="mt-10 flex w-screen max-w-[1100px] flex-col bg-downy p-5 md:p-10 lg:rounded-xl">
 		<h3 class="mb-10 text-center text-3xl font-bold tracking-wide text-panache lg:mt-0">
-			Why choose yoga?
+			Why Choose Slow and Mindful Yoga?
 		</h3>
 		<div class="flex w-full flex-col gap-8 lg:flex-row">
 			<BenefitCard>
