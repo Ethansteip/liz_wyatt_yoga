@@ -14,17 +14,20 @@
 </script>
 
 <svelte:head>
-	<title>Liz Wyatt Yoga - Slow and Mindful Yoga in Kitchener-Waterloo</title>
-	<meta
-		name="description"
-		content="Slow and Mindful yoga is all about connecting deeply with your breath and body in a relaxed
-			manner. This practice encourages exploration of stability and ease in both mind and body. We
-			are `working in` instead of `working out`!"
-	/>
-	<meta
-		name="keywords"
-		content="yoga Kitchener-Waterloo, mindful yoga, slow yoga, inclusive yoga, accessible yoga, beginner yoga, senior yoga, yoga for all abilities"
-	/>
+        <title>Liz Wyatt Yoga - Slow and Mindful Yoga in Kitchener-Waterloo</title>
+        <meta
+                name="description"
+                content="Slow and Mindful yoga classes in Waterloo, Ontario. Connect deeply with your breath and body in a relaxed manner while exploring stability and ease. We are `working in` instead of `working out`!"
+        />
+        <meta
+                name="keywords"
+                content="yoga Waterloo, yoga Kitchener-Waterloo, mindful yoga, slow yoga, inclusive yoga, accessible yoga, beginner yoga, senior yoga, yoga for all abilities"
+        />
+        <link rel="canonical" href="https://liz-wyatt-yoga.com/" />
+        <meta property="og:title" content="Liz Wyatt Yoga - Slow and Mindful Yoga in Kitchener-Waterloo" />
+        <meta property="og:description" content="Slow and Mindful yoga classes in Waterloo, Ontario." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://liz-wyatt-yoga.com/" />
 </svelte:head>
 
 <section
