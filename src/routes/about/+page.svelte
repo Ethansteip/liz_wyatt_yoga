@@ -6,15 +6,20 @@
 </script>
 
 <svelte:head>
-	<title>About Liz Wyatt - Certified Yoga Instructor in Kitchener-Waterloo</title>
-	<meta
-		name="description"
-		content="Meet Liz Wyatt, a certified yoga instructor with over 25 years of experience teaching slow and mindful yoga in Kitchener-Waterloo. E-RYT 550 certified."
-	/>
-	<meta
-		name="keywords"
-		content="Liz Wyatt, yoga instructor, Kitchener-Waterloo yoga, slow yoga, mindful yoga, certified yoga teacher, E-RYT 550, Canadian Yoga Alliance"
-	/>
+        <title>About Liz Wyatt - Certified Yoga Instructor in Kitchener-Waterloo</title>
+        <meta
+                name="description"
+                content="Meet Liz Wyatt, a certified yoga instructor with over 25 years of experience teaching slow and mindful yoga in Kitchener-Waterloo. E-RYT 550 certified."
+        />
+        <meta
+                name="keywords"
+                content="Liz Wyatt, yoga instructor, yoga Waterloo, Kitchener-Waterloo yoga, slow yoga, mindful yoga, certified yoga teacher, E-RYT 550, Canadian Yoga Alliance"
+        />
+        <link rel="canonical" href="https://liz-wyatt-yoga.com/about" />
+        <meta property="og:title" content="About Liz Wyatt - Certified Yoga Instructor" />
+        <meta property="og:description" content="Meet Liz Wyatt, a certified yoga instructor teaching slow and mindful yoga in Waterloo, Ontario." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://liz-wyatt-yoga.com/about" />
 </svelte:head>
 
 <section class="mx-auto flex w-full max-w-[1100px] flex-col gap-16 p-5 py-10 lg:py-20">
