@@ -63,39 +63,31 @@ const scheduleData: YogaClass[] = [
 		location: 'Waterloo Memorial Recreation Complex',
 		address:
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
-		duration: 'April 8th - June 24th',
+		duration: 'July 15th - August 26th',
 		weekday: `Next class - ${getNextClassDate([
-			'Tuesday, April, 15, 2025',
-			'Tuesday, April, 22, 2025',
-			'Tuesday, April, 29, 2025',
-			'Tuesday, May, 6, 2025',
-			'Tuesday, May, 13, 2025',
-			'Tuesday, May, 20, 2025',
-			'Tuesday, May, 27, 2025',
-			'Tuesday, June, 3, 2025',
-			'Tuesday, June, 10, 2025',
-			'Tuesday, June, 17, 2025',
-			'Tuesday, June, 24, 2025'
+			'Tuesday, July, 15, 2025',
+			'Tuesday, July, 22, 2025',
+			'Tuesday, July, 29, 2025',
+			'Tuesday, August, 5, 2025',
+			'Tuesday, August, 12, 2025',
+			'Tuesday, August, 19, 2025',
+			'Tuesday, August, 26, 2025'
 		])}`,
 		dates: [
-			'Tuesday, April, 15, 2025',
-			'Tuesday, April, 22, 2025',
-			'Tuesday, April, 29, 2025',
-			'Tuesday, May, 6, 2025',
-			'Tuesday, May, 13, 2025',
-			'Tuesday, May, 20, 2025',
-			'Tuesday, May, 27, 2025',
-			'Tuesday, June, 3, 2025',
-			'Tuesday, June, 10, 2025',
-			'Tuesday, June, 17, 2025',
-			'Tuesday, June, 24, 2025'
+			'Tuesday, July, 15, 2025',
+			'Tuesday, July, 22, 2025',
+			'Tuesday, July, 29, 2025',
+			'Tuesday, August, 5, 2025',
+			'Tuesday, August, 12, 2025',
+			'Tuesday, August, 19, 2025',
+			'Tuesday, August, 26, 2025'
 		],
 		class: 'Chair Yoga',
 		image: ChairYoga5,
 		time: 'Tuesdays - 10:00 - 11:00 am',
 		mapLocation: 'wmrc',
-		price: '$132 for 12 weeks - 55+ is $99 / 12 Weeks',
-		dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
+		price: '$77 for 7 weeks'
+		// dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
 	},
 	{
 		id: 2,
@@ -103,106 +95,96 @@ const scheduleData: YogaClass[] = [
 		location: 'Waterloo Memorial Recreation Complex',
 		address:
 			'Waterloo Memorial Recreation Complex, 101 Father David Bauer Dr, Waterloo, ON N2L 0B4',
-		duration: 'April 8th - June 24th',
+		duration: 'July 15th - August 26th',
 		weekday: `Next class - ${getNextClassDate([
-			'Tuesday, April, 15, 2025',
-			'Tuesday, April, 22, 2025',
-			'Tuesday, April, 29, 2025',
-			'Tuesday, May, 6, 2025',
-			'Tuesday, May, 13, 2025',
-			'Tuesday, May, 20, 2025',
-			'Tuesday, May, 27, 2025',
-			'Tuesday, June, 3, 2025',
-			'Tuesday, June, 10, 2025',
-			'Tuesday, June, 17, 2025',
-			'Tuesday, June, 24, 2025'
+			'Tuesday, July, 15, 2025',
+			'Tuesday, July, 22, 2025',
+			'Tuesday, July, 29, 2025',
+			'Tuesday, August, 5, 2025',
+			'Tuesday, August, 12, 2025',
+			'Tuesday, August, 19, 2025',
+			'Tuesday, August, 26, 2025'
 		])}`,
 		dates: [
-			'Tuesday, April, 15, 2025',
-			'Tuesday, April, 22, 2025',
-			'Tuesday, April, 29, 2025',
-			'Tuesday, May, 6, 2025',
-			'Tuesday, May, 13, 2025',
-			'Tuesday, May, 20, 2025',
-			'Tuesday, May, 27, 2025',
-			'Tuesday, June, 3, 2025',
-			'Tuesday, June, 10, 2025',
-			'Tuesday, June, 17, 2025',
-			'Tuesday, June, 24, 2025'
+			'Tuesday, July, 15, 2025',
+			'Tuesday, July, 22, 2025',
+			'Tuesday, July, 29, 2025',
+			'Tuesday, August, 5, 2025',
+			'Tuesday, August, 12, 2025',
+			'Tuesday, August, 19, 2025',
+			'Tuesday, August, 26, 2025'
 		],
 		class: 'Mat Yoga',
 		image: MatYoga7,
 		time: 'Tuesdays - 11:15 - 12:15 pm',
 		mapLocation: 'wmrc',
-		price: '$132 for 12 weeks - 55+ is $99 / 12 Weeks',
-		dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
+		price: '$77 for 7 weeks'
+		// dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
 	},
 	{
 		id: 3,
 		classActive: true,
 		location: 'RIM Park',
 		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
-		duration: 'May 7th - June 25th',
+		duration: 'July 16th - August 27th',
 		weekday: `Next class - ${getNextClassDate([
-			'Wednesday, May, 7, 2025',
-			'Wednesday, May, 14, 2025',
-			'Wednesday, May, 21, 2025',
-			// 'Wednesday, May, 28, 2025',
-			'Wednesday, June, 4, 2025',
-			'Wednesday, June, 11, 2025',
-			'Wednesday, June, 18, 2025',
-			'Wednesday, June, 25, 2025'
+			'Wednesday, July, 16, 2025',
+			'Wednesday, July, 23, 2025',
+			'Wednesday, July, 30, 2025',
+			'Wednesday, August, 6, 2025',
+			'Wednesday, August, 13, 2025',
+			'Wednesday, August, 20, 2025',
+			'Wednesday, August, 27, 2025'
 		])}`,
 		dates: [
-			'Wednesday, May, 7, 2025',
-			'Wednesday, May, 14, 2025',
-			'Wednesday, May, 21, 2025',
-			// 'Wednesday, May, 28, 2025',
-			'Wednesday, June, 4, 2025',
-			'Wednesday, June, 11, 2025',
-			'Wednesday, June, 18, 2025',
-			'Wednesday, June, 25, 2025'
+			'Tuesday, July, 15, 2025',
+			'Tuesday, July, 22, 2025',
+			'Tuesday, July, 29, 2025',
+			'Tuesday, August, 5, 2025',
+			'Tuesday, August, 12, 2025',
+			'Tuesday, August, 19, 2025',
+			'Tuesday, August, 26, 2025'
 		],
 		class: 'Mat Yoga',
 		image: MatYoga2,
 		time: 'Wednesdays - 10:00 - 11:00 am',
 		mapLocation: 'rim',
-		price: '$77 for 8 weeks - 55+ is $57.75 / 8 Weeks',
-		dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
+		price: '$77 for 7 weeks'
+		// dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
 	},
-	{
-		id: 4,
-		classActive: true,
-		location: 'RIM Park',
-		address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
-		duration: 'May 7th - June 25th',
-		weekday: `Next class - ${getNextClassDate([
-			'Wednesday, May, 7, 2025',
-			'Wednesday, May, 14, 2025',
-			'Wednesday, May, 21, 2025',
-			// 'Wednesday, May, 28, 2025',
-			'Wednesday, June, 4, 2025',
-			'Wednesday, June, 11, 2025',
-			'Wednesday, June, 18, 2025',
-			'Wednesday, June, 25, 2025'
-		])}`,
-		dates: [
-			'Wednesday, May, 7, 2025',
-			'Wednesday, May, 14, 2025',
-			'Wednesday, May, 21, 2025',
-			// 'Wednesday, May, 28, 2025',
-			'Wednesday, June, 4, 2025',
-			'Wednesday, June, 11, 2025',
-			'Wednesday, June, 18, 2025',
-			'Wednesday, June, 25, 2025'
-		],
-		class: 'Mat Yoga',
-		image: MatYoga6,
-		time: 'Wednesdays - 6:45 - 7:45 pm',
-		mapLocation: 'rim',
-		price: '$77 for 8 weeks - 55+ is $57.75 / 8 Weeks',
-		dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
-	},
+	// {
+	// 	id: 4,
+	// 	classActive: true,
+	// 	location: 'RIM Park',
+	// 	address: 'RIM Park, 2001 University Ave, Waterloo, ON N2K 4K4',
+	// 	duration: 'May 7th - June 25th',
+	// 	weekday: `Next class - ${getNextClassDate([
+	// 		'Wednesday, May, 7, 2025',
+	// 		'Wednesday, May, 14, 2025',
+	// 		'Wednesday, May, 21, 2025',
+	// 		// 'Wednesday, May, 28, 2025',
+	// 		'Wednesday, June, 4, 2025',
+	// 		'Wednesday, June, 11, 2025',
+	// 		'Wednesday, June, 18, 2025',
+	// 		'Wednesday, June, 25, 2025'
+	// 	])}`,
+	// 	dates: [
+	// 		'Wednesday, May, 7, 2025',
+	// 		'Wednesday, May, 14, 2025',
+	// 		'Wednesday, May, 21, 2025',
+	// 		// 'Wednesday, May, 28, 2025',
+	// 		'Wednesday, June, 4, 2025',
+	// 		'Wednesday, June, 11, 2025',
+	// 		'Wednesday, June, 18, 2025',
+	// 		'Wednesday, June, 25, 2025'
+	// 	],
+	// 	class: 'Mat Yoga',
+	// 	image: MatYoga6,
+	// 	time: 'Wednesdays - 6:45 - 7:45 pm',
+	// 	mapLocation: 'rim',
+	// 	price: '$77 for 8 weeks - 55+ is $57.75 / 8 Weeks',
+	// 	dropInPrice: 'Drop in rate - $14.30 per class or $55+ $10.70 per class'
+	// },
 	{
 		id: 5,
 		classActive: false,
@@ -215,20 +197,20 @@ const scheduleData: YogaClass[] = [
 		time: 'Dates to be announced',
 		mapLocation: 'st-agatha',
 		price: 'To be announced'
-	},
-	{
-		id: 6,
-		classActive: false,
-		location: 'St. Agatha Community Centre',
-		address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
-		duration: '',
-		weekday: 'Dates to be announced',
-		class: 'Mat Yoga',
-		image: MatYoga1,
-		time: 'Dates to be announced',
-		mapLocation: 'st-agatha',
-		price: 'To be announced'
 	}
+	// {
+	// 	id: 6,
+	// 	classActive: false,
+	// 	location: 'St. Agatha Community Centre',
+	// 	address: 'St. Agatha Community Centre, 1791 Erbs Rd, St. Agatha, ON N3A 3M3',
+	// 	duration: '',
+	// 	weekday: 'Dates to be announced',
+	// 	class: 'Mat Yoga',
+	// 	image: MatYoga1,
+	// 	time: 'Dates to be announced',
+	// 	mapLocation: 'st-agatha',
+	// 	price: 'To be announced'
+	// }
 ];
 
 export const schedule = scheduleData;
