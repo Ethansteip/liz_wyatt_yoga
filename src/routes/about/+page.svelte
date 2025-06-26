@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
 	import { Instagram, Mail, Phone, BookmarkCheck } from 'lucide-svelte';
-	import Liz from '$lib/assets/liz.jpg';
+	import Liz from '$lib/assets/liz-2.jpg';
 	import Button from '$lib/components/ui/button/button.svelte';
 </script>
 
@@ -25,7 +25,7 @@
 	<meta property="og:url" content="https://liz-wyatt-yoga.com/about" />
 </svelte:head>
 
-<section class="mx-auto flex w-full max-w-[1100px] flex-col gap-16 p-5 py-10 lg:py-20">
+<section class="mx-auto flex w-full max-w-[1100px] flex-col gap-16 p-6 py-10 md:p-8 lg:py-20">
 	<!-- Top Section: Image and About -->
 	<div class="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-16">
 		<!-- Image -->
@@ -33,7 +33,7 @@
 			<img
 				src={Liz}
 				alt="Liz Wyatt"
-				class="h-full w-full rounded-xl transition-transform duration-300 group-hover:scale-105 sm:max-h-[700px] sm:max-w-[400px] md:object-cover md:p-0 lg:max-h-[1200px] lg:max-w-[800px]"
+				class="h-auto rounded-xl transition-transform duration-300 group-hover:scale-105 sm:max-h-[700px] sm:max-w-[400px] md:h-[25rem] md:object-cover md:p-0 lg:max-h-[1200px] lg:max-w-[800px]"
 			/>
 		</div>
 
@@ -60,10 +60,12 @@
 					humour.
 				</p>
 				<p class="leading-relaxed">
-					"Slow and subtle" is the way I teach. Slow and mindful yoga is not the same thing as
-					strong physical exercise; it is a different practice rooted in ancient wisdom and modern
-					neuroscience. Although you will notice gains in strength, flexibility and mobility, you
-					will also become aware of the differences that you feel as you gradually bring your
+					Slow and subtle is the way that I practise and teach thanks to the guidance of my teacher,
+					Kristine Weber, and her revolutionary Subtle Yoga trainings and ongoing professional
+					development rooted in the Viniyoga tradition. Slow and mindful yoga is not the same thing
+					as strong physical exercise; it is a different practice rooted in ancient wisdom and
+					modern neuroscience. Although you will notice gains in strength, flexibility and mobility,
+					you will also become aware of the differences that you feel as you gradually bring your
 					nervous system into balance.
 				</p>
 				<p class="leading-relaxed">
