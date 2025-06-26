@@ -1,8 +1,6 @@
 import ChairYoga1 from '$lib/assets/chair-yoga-2.jpg';
 import ChairYoga5 from '$lib/assets/chair-yoga-5.jpg';
-import MatYoga1 from '$lib/assets/mat-yoga-1.jpg';
 import MatYoga2 from '$lib/assets/mat-yoga-2.jpg';
-import MatYoga6 from '$lib/assets/mat-yoga-6.jpg';
 import MatYoga7 from '$lib/assets/mat-yoga-7.jpg';
 
 interface YogaClass {

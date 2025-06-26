@@ -25,12 +25,20 @@
 	<title>Yoga Class Schedule - Liz Wyatt Yoga in Kitchener-Waterloo</title>
 	<meta
 		name="description"
-		content="View our weekly yoga class schedule in Kitchener-Waterloo. Classes available at Waterloo Memorial Recreation Complex, RIM Park, and St. Agatha Community Centre."
+		content="View our weekly yoga class schedule in Waterloo, Ontario. Classes available at Waterloo Memorial Recreation Complex, RIM Park, and St. Agatha Community Centre."
 	/>
 	<meta
 		name="keywords"
-		content="yoga classes, Kitchener-Waterloo yoga schedule, chair yoga, mat yoga, St. Agatha yoga, RIM Park yoga, WMRC yoga, accessible yoga"
+		content="yoga Waterloo schedule, yoga classes, Kitchener-Waterloo yoga schedule, chair yoga, mat yoga, St. Agatha yoga, RIM Park yoga, WMRC yoga, accessible yoga"
 	/>
+	<link rel="canonical" href="https://liz-wyatt-yoga.com/schedule" />
+	<meta property="og:title" content="Yoga Class Schedule" />
+	<meta
+		property="og:description"
+		content="View our weekly yoga class schedule in Waterloo, Ontario."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://liz-wyatt-yoga.com/schedule" />
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">
