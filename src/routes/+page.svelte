@@ -94,7 +94,7 @@
 			</BenefitCard>
 			<BenefitCard>
 				{#snippet icon()}<Brain class="h-8 w-8 text-white" />{/snippet}
-				{#snippet title()}Mental Clarity{/snippet}
+				{#snippet title()}Self Care{/snippet}
 				{#snippet description()}In our fast-paced world, slow and mindful yoga offers a precious
 					opportunity to pause and catch your breath.{/snippet}
 			</BenefitCard>
