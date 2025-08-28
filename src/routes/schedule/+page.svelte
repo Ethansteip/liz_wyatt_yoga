@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { schedule } from '$lib/data';
 	import * as Card from '$lib/components/ui/card/index';
+	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import { ChevronRight } from 'lucide-svelte';
 
 	import stAgathaMap from '$lib/assets/st-agatha-map.png';
@@ -57,9 +58,13 @@
 							</a>
 						</div>
 					</Card.Title>
-					<Card.Description class="text-muted-foreground">
-						{session.weekday}
-					</Card.Description>
+					{#if session.classActive}
+						<Card.Description class="text-muted-foreground">
+							{session.weekday}
+						</Card.Description>
+					{:else}
+						<Badge variant="default" class="w-fit">{session.weekday}</Badge>
+					{/if}
 				</Card.Header>
 				<Card.Content class="flex flex-1 flex-col space-y-4">
 					<div class="min-h-[100px]">

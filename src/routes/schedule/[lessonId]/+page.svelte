@@ -2,7 +2,8 @@
 	import { page } from '$app/state';
 	import { schedule, yogaDescriptions } from '$lib/data';
 	import * as Card from '$lib/components/ui/card/index';
-	import { MapPin, Clock, Calendar, DollarSign } from 'lucide-svelte';
+	import { Separator } from '$lib/components/ui/separator/index';
+	import { MapPin, Clock, Calendar, DollarSign, Notebook } from 'lucide-svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 
 	import stAgathaMap from '$lib/assets/st-agatha-map.png';
@@ -28,7 +29,7 @@
 				<Card.Title class="text-3xl font-bold text-primary">{session.class}</Card.Title>
 				<div class="flex flex-col gap-4 pt-4">
 					<div class="flex items-center gap-2 text-muted-foreground">
-						<Calendar class="h-5 w-5" />
+						<Calendar class="h-5 w-5 flex-none" />
 						<span>{session.weekday}</span>
 					</div>
 					<div class="flex items-center gap-2 text-muted-foreground">
@@ -36,18 +37,25 @@
 						<span>{session.time} ({LESSON_DURATION})</span>
 					</div>
 					<div class="flex items-center gap-2 text-muted-foreground">
-						<MapPin class="h-5 w-5" />
+						<MapPin class="h-5 w-5 flex-none" />
 						<span>{session.location}</span>
 					</div>
 					<div class="flex items-center gap-2 text-muted-foreground">
-						<DollarSign class="h-5 w-5" />
-						<span>{session.price}</span>
+						<DollarSign class="h-5 w-5 flex-none" />
+						<span>Price: {session.price}</span>
 					</div>
 					{#if session.dropInPrice}
 						<div class="flex items-center gap-2 text-muted-foreground">
-							<DollarSign class="h-5 w-5" />
-							<span>{session.dropInPrice}</span>
+							<DollarSign class="h-5 w-5 flex-none" />
+							<span>Drop-in: {session.dropInPrice}</span>
 						</div>
+					{/if}
+					{#if session.additionalInfo}
+						<div class="flex items-center gap-2 text-muted-foreground">
+							<Notebook class="h-6 w-5 flex-none" />
+							<span class="">{session.additionalInfo}</span>
+						</div>
+						<Separator class="my-2" />
 					{/if}
 				</div>
 			</Card.Header>

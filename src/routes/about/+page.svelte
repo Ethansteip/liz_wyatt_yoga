@@ -48,29 +48,18 @@
 
 			<div class="space-y-6 text-slate-600">
 				<p class="leading-relaxed">
-					Welcome to my website. Here's a bit about me and the yoga that I teach.
+					My yoga journey began in 1993, and since 2000, I've had the honor of guiding others on
+					their own path. My teaching has been deeply influenced by Kristine Weber's Subtle Yoga
+					method, which I've been studying since 2020. It's also a joy to mentor other yoga
+					teachers, a role I've been in since 2005. I truly believe that yoga is for everyone, and
+					it's my passion to help you discover what this practice can do for you.
 				</p>
 				<p class="leading-relaxed">
-					I have over 25 years of yoga practice, teaching and teacher mentoring.
-				</p>
-				<p class="leading-relaxed">
-					With a professional background in education and fitness leadership, I bring my skills in
-					teaching and my knowledge of yoga techniques and philosophy into every class. I'm known
-					for my respect for the yoga tradition, my easy going manner, and ever-present sense of
-					humour.
-				</p>
-				<p class="leading-relaxed">
-					Slow and subtle is the way that I practise and teach thanks to the guidance of my teacher,
-					Kristine Weber, and her revolutionary Subtle Yoga trainings and ongoing professional
-					development rooted in the Viniyoga tradition. Slow and mindful yoga is not the same thing
-					as strong physical exercise; it is a different practice rooted in ancient wisdom and
-					modern neuroscience. Although you will notice gains in strength, flexibility and mobility,
-					you will also become aware of the differences that you feel as you gradually bring your
-					nervous system into balance.
-				</p>
-				<p class="leading-relaxed">
-					Whether you choose to participate sitting in a chair or on a mat on the floor, think of
-					"working in" instead of "working out".
+					When you step into my class, you'll find a space that is inclusive and accessible. We're
+					not focused on strong, physical exercise; instead, we'll explore what I like to call
+					"innercise"—a practice rooted in the yoga tradition and informed by modern neuroscience.
+					My goal is to meet you exactly where you are and provide a calm, encouraging environment
+					where you feel empowered to reach your own goals.
 				</p>
 			</div>
 

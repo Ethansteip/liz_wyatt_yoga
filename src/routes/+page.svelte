@@ -58,7 +58,7 @@
 					in:fly={{ delay: 350, duration: 400, y: 20 }}
 					class="text-center text-3xl font-bold tracking-wide text-primary md:text-left md:text-4xl lg:text-5xl"
 				>
-					Slow and Mindful Yoga for Greater Health and Wellbeing
+					Greater Health and Well-being through Slow and Mindful Yoga
 				</h2>
 				<h2
 					in:fly={{ delay: 500, duration: 400, y: 20 }}
