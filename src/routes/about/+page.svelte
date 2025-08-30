@@ -141,7 +141,7 @@
 				Certifications & Training
 			</h2>
 			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-				{#each ['Canadian Yoga Alliance Certified Yoga Instructor', 'E-RYT 550 - Canadian Yoga Alliance', 'E-CYT 500 Global Online Yoga Alliance', '40 hour Subtle Yoga Teacher Training', '100+ hours Subtle Yoga Workshop Trainings', '50 hours Yoga Physiology NYU', '100 hour Meditation Teacher Certification:  Yogamu'] as certification}
+				{#each ['Canadian Yoga Alliance E-RYT Gold', 'E-CYT 500 Global Online Yoga Alliance', '40 hour Subtle Yoga Teacher Training', '100+ hours Subtle Yoga Workshop Trainings', '50 hours Yoga Physiology NYU', '100 hour Meditation Teacher Certification:  Yogamu'] as certification}
 					<div
 						class="flex w-full items-center gap-4 rounded-lg bg-slate-100 p-4 transition-colors duration-200 hover:bg-slate-200"
 					>
