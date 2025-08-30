@@ -9,11 +9,11 @@
 	<title>About Liz Wyatt - Certified Yoga Instructor in Kitchener-Waterloo</title>
 	<meta
 		name="description"
-		content="Meet Liz Wyatt, a certified yoga instructor with over 25 years of experience teaching slow and mindful yoga in Kitchener-Waterloo. E-RYT 550 certified."
+		content="Meet Liz Wyatt, a certified yoga instructor with over 25 years of experience teaching slow and mindful yoga in Kitchener-Waterloo. E-RYT Gold certified."
 	/>
 	<meta
 		name="keywords"
-		content="Liz Wyatt, yoga instructor, yoga Waterloo, Kitchener-Waterloo yoga, slow yoga, mindful yoga, certified yoga teacher, E-RYT 550, Canadian Yoga Alliance"
+		content="Liz Wyatt, yoga instructor, yoga Waterloo, Kitchener-Waterloo yoga, slow yoga, mindful yoga, certified yoga teacher, E-RYT Gold, Canadian Yoga Alliance"
 	/>
 	<link rel="canonical" href="https://liz-wyatt-yoga.com/about" />
 	<meta property="og:title" content="About Liz Wyatt - Certified Yoga Instructor" />
@@ -43,7 +43,7 @@
 				<h1 class="text-4xl font-bold tracking-tight text-primary lg:text-5xl">
 					About Your Instructor
 				</h1>
-				<h2 class="text-xl font-medium text-secondary">Liz Wyatt, BA, BEd, E-RYT 550</h2>
+				<h2 class="text-xl font-medium text-secondary">Liz Wyatt, BA, BEd, E-RYT Gold</h2>
 			</div>
 
 			<div class="space-y-6 text-slate-600">
