@@ -56,7 +56,7 @@
 				</p>
 				<p class="leading-relaxed">
 					When you step into my class, you'll find a space that is inclusive and accessible. We're
-					not focused on strong, physical exercise; instead, we'll explore what I like to call
+					not focused on strong, physical exercise; instead, we'll explore
 					"innercise"—a practice rooted in the yoga tradition and informed by modern neuroscience.
 					My goal is to meet you exactly where you are and provide a calm, encouraging environment
 					where you feel empowered to reach your own goals.
