@@ -64,7 +64,7 @@
 					in:fly={{ delay: 500, duration: 400, y: 20 }}
 					class="font-md text-center text-xl tracking-wider text-slate-500 md:text-left md:text-2xl"
 				>
-					Inclusive and accessible yoga classes for all ages and abilities in Kitchener-Waterloo
+					Inclusive and accessible yoga classes in Kitchener-Waterloo.
 				</h2>
 				<div
 					in:fly={{ delay: 700, duration: 400, y: 20 }}
