@@ -4,14 +4,14 @@
 	import { buttonVariants } from '$lib/components/ui/button/index';
 	import { Menu, CalendarCheck2, Book, House } from 'lucide-svelte';
 	import { page } from '$app/state';
-	import logo from '$lib/assets/Aunt-liz-logo.png';
+	import logo from '$lib/assets/liz-watt-logo.png';
 </script>
 
 <nav class="flex h-[4rem] w-full items-center px-5 lg:shadow">
 	<div class="mx-auto flex w-full max-w-[1100px] items-center justify-center">
-		<div class="w-1/4 sm:w-1/3">
+		<a href="/" class="w-1/4 sm:w-1/3">
 			<img src={logo} class="w-10 lg:w-14" alt="logo" />
-		</div>
+		</a>
 		<div class="justify center flex w-1/2 items-center justify-center sm:w-1/3">
 			<h1 class="text-xl font-black tracking-wide text-primary lg:text-2xl">
 				<a href="/">Liz Wyatt Yoga</a>

@@ -3,7 +3,6 @@ import ChairYoga2 from '$lib/assets/chair-yoga-2.jpg';
 import MatYoga2 from '$lib/assets/mat-yoga-2.jpg';
 import MatYoga3 from '$lib/assets/mat-yoga-3.jpg';
 import MatYoga7 from '$lib/assets/mat-yoga-7.jpg';
-import MatYoga6 from '$lib/assets/mat-yoga-6.jpg';
 
 interface YogaClass {
 	id: number;

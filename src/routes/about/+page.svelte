@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
 	import { Instagram, Mail, Phone, BookmarkCheck } from 'lucide-svelte';
+	import FullLogo from '$lib/assets/liz-wyatt-full-logo.png';
 	import Liz from '$lib/assets/liz-2.jpg';
 	import Button from '$lib/components/ui/button/button.svelte';
 </script>
@@ -29,11 +30,18 @@
 	<!-- Top Section: Image and About -->
 	<div class="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:gap-16">
 		<!-- Image -->
-		<div class="flex w-full items-center justify-center lg:w-1/2">
+		<div
+			class="flex w-full flex-col-reverse items-center justify-center gap-3 sm:flex-row lg:w-1/2 lg:flex-col"
+		>
 			<img
 				src={Liz}
 				alt="Liz Wyatt"
 				class="h-auto rounded-xl transition-transform duration-300 group-hover:scale-105 sm:max-h-[700px] sm:max-w-[400px] md:h-[25rem] md:object-cover md:p-0 lg:max-h-[1200px] lg:max-w-[800px]"
+			/>
+			<img
+				src={FullLogo}
+				class="rounded-xl sm:hidden md:max-w-[25rem] lg:flex"
+				alt="Liz Wyatt Logo, with the caption - `breathe, move, rest`"
 			/>
 		</div>
 
@@ -56,10 +64,10 @@
 				</p>
 				<p class="leading-relaxed">
 					When you step into my class, you'll find a space that is inclusive and accessible. We're
-					not focused on strong, physical exercise; instead, we'll explore
-					"innercise"—a practice rooted in the yoga tradition and informed by modern neuroscience.
-					My goal is to meet you exactly where you are and provide a calm, encouraging environment
-					where you feel empowered to reach your own goals.
+					not focused on strong, physical exercise; instead, we'll explore "innercise"—a practice
+					rooted in the yoga tradition and informed by modern neuroscience. My goal is to meet you
+					exactly where you are and provide a calm, encouraging environment where you feel empowered
+					to reach your own goals.
 				</p>
 			</div>
 

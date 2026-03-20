@@ -3,23 +3,6 @@
 	import * as Card from '$lib/components/ui/card/index';
 	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import { ChevronRight } from 'lucide-svelte';
-
-	import stAgathaMap from '$lib/assets/st-agatha-map.png';
-	import wmrcMap from '$lib/assets/wmrc-map.png';
-	import rimMap from '$lib/assets/rim-map.png';
-
-	const mapImages = {
-		'st-agatha': stAgathaMap,
-		wmrc: wmrcMap,
-		rim: rimMap
-	};
-
-	const yogaDescriptions = {
-		'Chair Yoga':
-			'A gentle form of yoga that can be done while seated. Perfect for seniors, those with limited mobility, or anyone looking for a more accessible yoga practice.',
-		'Mat Yoga':
-			'Traditional yoga practice performed on a yoga mat. Includes standing and floor poses to improve flexibility, strength, and balance.'
-	};
 </script>
 
 <svelte:head>
@@ -42,7 +25,7 @@
 	<meta property="og:url" content="https://liz-wyatt-yoga.com/schedule" />
 </svelte:head>
 
-<div class="container mx-auto px-4 py-8">
+<div class="container mx-auto max-w-[1100px] px-4 py-8">
 	<h1 class="mb-8 text-4xl font-bold text-primary">Weekly Yoga Schedule</h1>
 
 	<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
