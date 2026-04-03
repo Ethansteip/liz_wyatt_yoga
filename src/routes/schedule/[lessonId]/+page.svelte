@@ -28,7 +28,7 @@
 			<Card.Header>
 				<Card.Title class="text-3xl font-bold text-primary">{session.class}</Card.Title>
 				<div class="flex flex-col gap-4 pt-4">
-					<div class="flex items-center gap-2 text-muted-foreground">
+					<div class="flex items-center gap-2 font-bold text-muted-foreground">
 						<Calendar class="h-5 w-5 flex-none" />
 						<span>{session.weekday}</span>
 					</div>
@@ -55,6 +55,9 @@
 							<Notebook class="h-6 w-5 flex-none" />
 							<span class="">{session.additionalInfo}</span>
 						</div>
+					{/if}
+					{#if session?.link}
+						<Button href={session.link} target="_blank">View On City Of Waterloo Website</Button>
 						<Separator class="my-2" />
 					{/if}
 				</div>
