@@ -82,7 +82,7 @@
 					<span>+1 (226) 622-7172</span>
 				</Button>
 				<Button
-					href="https://www.instagram.com/lizwyatt_yogayou/"
+					href="https://www.instagram.com/lizwyattyoga/"
 					target="_blank"
 					variant="default"
 					class="w-full gap-2 md:w-auto"
