@@ -107,7 +107,7 @@ const scheduleData: YogaClass[] = [
 		dropInPrice: '$14.70 for ages 54 and under, $11.00 for ages 55+',
 		additionalInfo:
 			'There are 5 drop - in spots available for each class. You may register to drop - in up to 72 hours in advance of the class.',
-		link: 'https://anc.ca.apm.activecommunities.com/activewaterloo/activity/search/detail/87912?onlineSiteId=0&from_original_cui=true'
+		link: ''
 	},
 	{
 		id: 2,
@@ -158,7 +158,7 @@ const scheduleData: YogaClass[] = [
 		dropInPrice: '$14.70 for ages 54 and under, $11.00 for ages 55+',
 		additionalInfo:
 			'There are 5 drop - in spots available for each class. You may register to drop - in up to 72 hours in advance of the class.',
-		link: 'https://anc.ca.apm.activecommunities.com/activewaterloo/activity/search/detail/87925?onlineSiteId=0&from_original_cui=true'
+		link: ''
 	},
 	{
 		id: 3,
@@ -208,7 +208,7 @@ const scheduleData: YogaClass[] = [
 		dropInPrice: '$14.70 for ages 54 and under, $11.00 for ages 55+',
 		additionalInfo:
 			'There are 5 drop - in spots available for each class. You may register to drop - in up to 72 hours in advance of the class.',
-		link: 'https://anc.ca.apm.activecommunities.com/activewaterloo/activity/search/detail/87926?onlineSiteId=0&from_original_cui=true'
+		link: ''
 	},
 	{
 		id: 5,
